@@ -14,4 +14,6 @@ Form Recognizer is an AI service that applies advanced machine learning to extra
     3. Receipt
     4. Identity document (ID)
     5. Business card
-3. Extract text, structure, and fields from models trained with your data, so they're tailored to your forms and documents using custom models.
+3. Extract text, structure, and fields from models trained with your data, so they're tailored to your forms and documents using the following custom models:
+    1. Template (Custom form) models
+    2. Neural (Custom document) models
