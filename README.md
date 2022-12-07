@@ -1,6 +1,6 @@
 # Getting started with Form Recognizer
 
-## What is Form Recognizer
+## What is Form Recognizer?
 Form Recognizer is an AI service that applies advanced machine learning to extract text, key-value pairs, tables, and structures from documents automatically and accurately. Turn documents into usable data and shift your focus to acting on information rather than compiling it.
 
 ### The following are the main topics covered in this lab:
