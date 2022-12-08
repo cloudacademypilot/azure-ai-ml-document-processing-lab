@@ -4,12 +4,14 @@
     "parameters": {
         "storageAccountName": {
             "type": "string",
+            "defaultValue": "[format('sa-{0}', substring(guid(resourceGroup().id), 0, 4))]",
             "metadata": {
                 "description": "Specifies the name of the Azure Storage account."
             }
         },
         "location": {
             "type": "string",
+            "defaultValue": "[resourceGroup().location]",
             "metadata": {
                 "description": "Specifies the location in which the Azure Storage resources should be deployed."
             }
