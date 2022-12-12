@@ -28,4 +28,4 @@ The following Form Recognizer service features are available in the Studio.
 
 1.  Go to the [Azure](https://portal.azure.com) portal and search _Applied AI services_. Click _Create_ on the Form Recognizer card.
 
-![Applied AI services Overview page]()
+![Applied AI services Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01/assets/01.png)
