@@ -17,6 +17,7 @@ Extract text, tables, structure, key-value pairs, and named entities from docume
 * Learn and explore the Document Analysis models
 
 ## Read (OCR) model
+The Read model analyzes and extracts lines, words, their locations, detected languages, and handwritten style if detected.
 
 ### What is OCR for documents?
 Optical Character Recognition (OCR) for documents is optimized for large text-heavy documents in multiple file formats and global languages. It includes features like higher-resolution scanning of document images for better handling of smaller and dense text; paragraph detection; and fillable form management. OCR capabilities also include advanced scenarios like single character boxes and accurate extraction of key fields commonly found in invoices, receipts, and other prebuilt scenarios.
@@ -24,5 +25,27 @@ Optical Character Recognition (OCR) for documents is optimized for large text-he
 ### OCR in Form Recognizer - Read model
 Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a higher resolution than Computer Vision Read and extracts print and handwritten text from PDF documents and scanned images. It detects paragraphs, text lines, words, locations, and languages. The read model is the underlying OCR engine for other Form Recognizer prebuilt models like Layout, General Document, Invoice, Receipt, Identity (ID) document, in addition to custom models.
 
-### Read model in Form Recognizer
+### Read model in Form Recognizer Studio
+to-do
 
+## Layout model
+
+The Layout analysis model analyzes and extracts text, tables, selection marks, and other structure elements like titles, section headings, page headers, page footers.
+
+### What is document structure layout analysis?
+Document structure layout analysis is the process of analyzing a document to extract regions of interest and their inter-relationships. The goal is to extract text and structural elements from the page to build better semantic understanding models. There are two types of roles that text plays in a document layout:
+1. Geometric roles: Text, tables, and selection marks are examples of geometric roles.
+2. Logical roles: Titles, headings, and footers are examples of logical roles.
+
+The following illustration shows the typical components in an image of a sample page.
+
+![Sample Page](to-do)
+
+### Layout model in Form Recognizer Studio
+to-do
+
+## General document model
+The general document model combines powerful Optical Character Recognition (OCR) capabilities with deep learning models to extract key-value pairs, tables, and selection marks from documents.
+
+### General document model in Form Recognizer Studio
+to-do
