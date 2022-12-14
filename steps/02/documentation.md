@@ -26,7 +26,27 @@ Optical Character Recognition (OCR) for documents is optimized for large text-he
 Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a higher resolution than Computer Vision Read and extracts print and handwritten text from PDF documents and scanned images. It detects paragraphs, text lines, words, locations, and languages. The read model is the underlying OCR engine for other Form Recognizer prebuilt models like Layout, General Document, Invoice, Receipt, Identity (ID) document, in addition to custom models.
 
 ### Read model in Form Recognizer Studio
-to-do
+
+1. In the Form Recognizer Studio, click _Try it now_ on the Read card to use the model.
+
+![FR Studio landing page]()
+
+2. Select a document of your choice either from the Storage Account through the _Fetch from URL_ option or upload a file from your local machine through the _Browse for a file_ option. You can also perform analysis on the samples already uploaded in the Studio. In this lab we will analyze the document present in the Storage Account.
+
+![Read model page]()
+
+3. Go to the Storage Account and click on the _resume_example3_ file. Copy the URL to the file and paste it in the dialog box. 
+
+![Storage Account page]()
+
+4. Click _Fetch_ and wait for the file to be uploaded. After successful upload, you can view file on the left side.
+
+![Fetch dialog box]()
+
+5. To perform the analysis, Click on _Analyze_. Upon completion, to-do
+
+![Analysis results page]()
+
 
 ## Layout model
 
