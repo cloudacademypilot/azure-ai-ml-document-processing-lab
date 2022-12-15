@@ -72,6 +72,7 @@ Composed models | Combine several custom models into a single model to automate 
 
 The Read API analyzes and extracts lines, words, their locations, detected languages, and handwritten style if detected.
 #### _Sample document processed using the Form Recognizer Studio_:
+![Read model sample]()
 
 ### Layout analysis
 The Layout analysis model analyzes and extracts text, tables, selection marks, and other structure elements like titles, section headings, page headers, page footers, and more.
