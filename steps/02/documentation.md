@@ -42,7 +42,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 5. To perform the analysis on the document, Click on _Analyze_. Upon completion, the result is displayed on the right. Hovering over the _Paragraph_ cards reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinates is displayed.
 ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/1.5.png)
 
-6. Got to the _Result_ tab to view the JSON output. 
+6. Go to the _Result_ tab to view the JSON output. 
     1. Paragraph extraction: The model extracts all identified blocks of text in the _paragraphs_ collection as a top level object under _analyzeResults_. Each entry in this collection represents a text block and includes the extracted text as _content_ and the bounding polygon coordinates under _boundingRegions_. The _spans_ information points to the text fragment within the top-level content property that contains the full text from the document. 
     ![JSON output - Paragraph extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/1.6.png)
 
@@ -75,7 +75,7 @@ The following illustration shows the typical components in an image of a sample 
 3. Click on the _layout-checklist.jpg_ sample and then click on Analyze. Upon completion, the result is displayed on the right. Hovering over the cards under _Text_ reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinates and role if identified is displayed. There are separate tabs for tables and selection marks.
 ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/2.3.png)
 
-4. Got to the _Result_ tab to view the JSON output. 
+4. Go to the _Result_ tab to view the JSON output. 
     1. Paragraph extraction: The Layout model extracts all identified blocks of text in the _paragraphs_ collection as a top level object under _analyzeResults_. Each entry in this collection represents a text block and includes the extracted text as _content_ and the bounding _polygon_ coordinates. The _span_ information points to the text fragment within the top level _content_ property that contains the full text from the document. The _role_ property extracts logical roles like titles, section headings, page headers, page footers.
         1. Paragraph roles: The model extracts logical roles like titles, section headings, page headers, page footers, and more. The model assigns certain text blocks in the _paragraphs_ collection with their specialized role or type predicted by the model. They're best used with unstructured documents to help understand the layout of the extracted content for a richer semantic analysis. The following paragraph roles are supported:
 
@@ -100,7 +100,16 @@ The following illustration shows the typical components in an image of a sample 
 
 
 ## General document model
-The general document model combines powerful Optical Character Recognition (OCR) capabilities with deep learning models to extract key-value pairs, tables, and selection marks from documents. The model supports structured, semi-structured, and unstructured documents.
+The general document model combines powerful Optical Character Recognition (OCR) capabilities with deep learning models to extract key-value pairs, tables, and selection marks from documents. The model supports structured, semi-structured, and unstructured documents. It's ideal for extracting common key-value pairs from documents.
 
 ### General document model in Form Recognizer Studio
-to-do
+
+1. In the Form Recognizer Studio, click _Try it now_ on the _General documents_ card to use the model.
+![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/3.1.png)
+
+2. Click on the _generaldoc.pdf_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right.
+![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/3.2.png)
+
+3. Go to the Result tab to view the JSON output.
+    1. Extraction of key-value pairs: Key-value pairs are specific spans within the document that identify a label or key and its associated response or value. In a structured form, these pairs could be the label and the value the user entered for that field. In an unstructured document, they could be the date a contract was executed on based on the text in a paragraph. The AI model is trained to extract identifiable keys and values based on a wide variety of document types, formats, and structures. Keys can also exist in isolation when the model detects that a key exists, with no associated value or when processing optional fields. For example, a middle name field may be left blank on a form in some instances. Key-value pairs are spans of text contained in the document.
+    ![Key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/3.3.png)
