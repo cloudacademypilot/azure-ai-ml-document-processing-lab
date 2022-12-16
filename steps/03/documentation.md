@@ -39,7 +39,17 @@ Form W-2, also known as the Wage and Tax Statement, is sent by an employer to ea
 The invoice model automates processing of invoices to extracts customer name, billing address, due date, and amount due, line items and other key data. Invoices can be of various formats and quality including phone-captured images, scanned documents, and digital PDFs.
 
 ### Invoice model in Form Recognizer Studio
-to-do
+
+1. In the Form Recognizer Studio, click _Try it now_ on the _Invoices_ card to use the model.
+![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.1.png)
+
+2. Click on the _invoice-english.pdf_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model extracts key-value pairs and tables too. The tables extracted is under the _content_ tab.
+![Analysis results page - fields](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.2.png)
+![Analysis results page - key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.3.png)
+
+3. Go to the _Result_ tab to view the JSON output. The models outputs words, lines, paragraphs, tables and key-value pairs.
+![Analysis results page - key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.4.png)
+
 
 ## Receipt model
 The receipt model scans sales receipts for merchant name, dates, line items, quantities, and totals from printed and handwritten receipts. Receipts can be of various formats and quality including printed and handwritten receipts.
