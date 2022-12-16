@@ -39,7 +39,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 4. Click _Fetch_ and wait for the file to be uploaded. After successful upload, you can view file on the left.
 ![Fetch dialog box](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/1.4.png)
 
-5. To perform the analysis on the document, Click on _Analyze_. Upon completion, the result is displayed on the right. Hovering over the _Paragraph_ cards reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinate is displayed.
+5. To perform the analysis on the document, Click on _Analyze_. Upon completion, the result is displayed on the right. Hovering over the _Paragraph_ cards reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinates is displayed.
 ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/1.5.png)
 
 6. Got to the _Result_ tab to view the JSON output. 
@@ -72,12 +72,12 @@ The following illustration shows the typical components in an image of a sample 
 
 2. Select a document of your choice either from the Storage Account through the Fetch from URL option or upload a file from your local machine through the Browse for a file option. You can also perform analysis on the samples already uploaded in the Studio which is what we will be doing henceforth.
 
-3. Click on the _layout-checklist.jpg_ sample and then click on Analyze. Upon completion, the result is displayed on the right.
+3. Click on the _layout-checklist.jpg_ sample and then click on Analyze. Upon completion, the result is displayed on the right. Hovering over the cards under _Text_ reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinates and role if identified is displayed. There are separate tabs for tables and selection marks.
 ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/2.3.png)
 
 4. Got to the _Result_ tab to view the JSON output. 
-    1. Paragraph extraction: The Layout model extracts all identified blocks of text in the _paragraphs_ collection as a top level object under _analyzeResults_. Each entry in this collection represents a text block and includes the extracted text as _content_ and the bounding _polygon_ coordinates. The _span_ information points to the text fragment within the top level _content_ property that contains the full text from the document.
-        1. Paragraph roles: The new machine-learning based page object detection extracts logical roles like titles, section headings, page headers, page footers, and more. The Form Recognizer Layout model assigns certain text blocks in the _paragraphs_ collection with their specialized role or type predicted by the model. They're best used with unstructured documents to help understand the layout of the extracted content for a richer semantic analysis. The following paragraph roles are supported:
+    1. Paragraph extraction: The Layout model extracts all identified blocks of text in the _paragraphs_ collection as a top level object under _analyzeResults_. Each entry in this collection represents a text block and includes the extracted text as _content_ and the bounding _polygon_ coordinates. The _span_ information points to the text fragment within the top level _content_ property that contains the full text from the document. The _role_ property extracts logical roles like titles, section headings, page headers, page footers.
+        1. Paragraph roles: The model extracts logical roles like titles, section headings, page headers, page footers, and more. The model assigns certain text blocks in the _paragraphs_ collection with their specialized role or type predicted by the model. They're best used with unstructured documents to help understand the layout of the extracted content for a richer semantic analysis. The following paragraph roles are supported:
 
             Predicted role | Description 
             ------------- | -------------
@@ -87,12 +87,16 @@ The following illustration shows the typical components in an image of a sample 
             pageHeader | Text near the top edge of the page
             pageFooter | Text near the bottom edge of the page
             pageNumber | Page number
-        
-        2. Lines and words extraction: The model in extracts print and handwritten style text as _lines_ and _words_. The model outputs bounding _polygon_ coordinates and _confidence_ for the extracted words. The _styles_ collection includes any handwritten style for lines if detected along with the spans pointing to the associated text. This feature applies to supported handwritten languages.
+        ![Paragraph extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/2.4.png)
+    
+    2. Lines and words extraction: The model in extracts print and handwritten style text as _lines_ and _words_. The model outputs bounding _polygon_ coordinates and _confidence_ for the extracted words. The _styles_ collection includes any handwritten style for lines if detected along with the spans pointing to the associated text. This feature applies to supported handwritten languages.
+    ![Lines and words extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/2.5.png)
 
-        3. Selection marks extraction: The model extracts selection marks from documents. Extracted selection marks appear within the _pages_ collection for each page. They include the bounding _polygon_, _confidence_, and selection _state_ (_selected_/_unselected_). Any associated text if extracted is also included as the starting index (_offset_) and _length_ that references the top level _content_ property that contains the full text from the document.
+    3. Selection marks extraction: The model extracts selection marks from documents. Extracted selection marks appear within the _pages_ collection for each page. They include the bounding _polygon_, _confidence_, and selection _state_ (_selected_/_unselected_). Any associated text if extracted is also included as the starting index (_offset_) and _length_ that references the top level _content_ property that contains the full text from the document.
+    ![Selection mark extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/2.6.png)
 
-        4. Extract tables from documents and images: Extracting tables is a key requirement for processing documents containing large volumes of data typically formatted as tables. The Layout model extracts tables in the _pageResults_ section of the JSON output. Extracted table information includes the number of columns and rows, row span, and column span. Each cell with its bounding polygon is output along with information whether it's recognized as a _columnHeader_ or not. The model supports extracting tables that are rotated. Each table cell contains the row and column index and bounding polygon coordinates. For the cell text, the model outputs the _span_ information containing the starting index (_offset_). The model also outputs the _length_ within the top-level content that contains the full text from the document.
+    4. Extract tables from documents and images: The model extracts tables in the _pageResults_ section of the JSON output. Extracted table information includes the number of columns and rows, row span, and column span. Each cell with its bounding polygon is output along with information whether it's recognized as a _columnHeader_ or not. The model supports extracting tables that are rotated. Each table cell contains the row and column index and bounding polygon coordinates. For the cell text, the model outputs the _span_ information containing the starting index (_offset_). The model also outputs the _length_ within the top-level content that contains the full text from the document.
+    ![Table extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02/assets/2.7.png)
 
 
 ## General document model
