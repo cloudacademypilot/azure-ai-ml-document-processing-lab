@@ -47,7 +47,7 @@ The invoice model automates processing of invoices to extracts customer name, bi
 ![Analysis results page - fields](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.2.png)
 ![Analysis results page - key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.3.png)
 
-3. Go to the _Result_ tab to view the JSON output. The models outputs words, lines, paragraphs, tables and key-value pairs.
+3. Go to the _Result_ tab to view the JSON output. The models outputs words, lines, paragraphs, tables and key-value pairs along with thier confidence.
 ![Analysis results page - key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/2.4.png)
 
 
