@@ -100,7 +100,7 @@ The following illustration shows the typical components in an image of a sample 
 
 
 ## General document model
-The general document model combines powerful Optical Character Recognition (OCR) capabilities with deep learning models to extract key-value pairs, tables, and selection marks from documents.
+The general document model combines powerful Optical Character Recognition (OCR) capabilities with deep learning models to extract key-value pairs, tables, and selection marks from documents. The model supports structured, semi-structured, and unstructured documents.
 
 ### General document model in Form Recognizer Studio
 to-do
