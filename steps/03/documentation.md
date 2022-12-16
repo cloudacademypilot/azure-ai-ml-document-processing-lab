@@ -12,7 +12,6 @@ Extract data from unique document types using the following prebuilt models:
 
 * Azure subscription
 * Form Recognizer resource
-* Storage account with sample documents
 
 ## Learning objectives
 
@@ -25,7 +24,16 @@ The W-2 form model extracts key information reported in each box on a W-2 form. 
 Form W-2, also known as the Wage and Tax Statement, is sent by an employer to each employee and the Internal Revenue Service (IRS) at the end of the year. A W-2 form reports employees' annual wages and the amount of taxes withheld from their paychecks. The IRS also uses W-2 forms to track individuals' tax obligations. The Social Security Administration (SSA) uses the information on this and other forms to compute the Social Security benefits for all workers.
 
 ### W-2 model in Form Recognizer Studio
-to-do
+
+1. In the Form Recognizer Studio, click _Try it now_ on the _W-2_ card to use the model.
+![FR Studio landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/1.1.png)
+
+2. Click on the __ sample and then click on _Analyze_. Upon completion, the result is displayed on the right.
+![FR Studio landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/1.2.png)
+
+3. Go to the _Result_ tab to view the JSON output.
+![JSON output](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/1.3.png)
+
 
 ## Invoice model
 The invoice model automates processing of invoices to extracts customer name, billing address, due date, and amount due, line items and other key data. Invoices can be of various formats and quality including phone-captured images, scanned documents, and digital PDFs.
