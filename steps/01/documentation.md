@@ -17,7 +17,6 @@ The following Form Recognizer service features are available in the Studio.
 ## Prerequisites
 
 * Azure subscription
-* Form Recognizer resource
 
 ## Learning objectives
 
