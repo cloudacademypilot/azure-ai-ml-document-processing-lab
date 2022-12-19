@@ -89,7 +89,16 @@ The Identity document (ID) model analyzes and extracts key information from iden
 The Business card model analyzes printed business cards and extracts key information such as first name, last name, company name, email address, and phone number from business card images.
 
 ### Business card model in Form Recognizer Studio
-to-do
+1. In the Form Recognizer Studio, click _Try it now_ on the _Business cards_ card to use the model.
+![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/5.1.png)
+
+2. Click on the _bizcard.jpg_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. 
+![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/5.2.png)
+
+3. Go to the _Result_ tab to view the JSON output. The extracted fields are under the _fields_ property. Each field has its respective _value_, _boundingRegions_, _spans_ and _confidence_.
+![JSON output](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/5.3.png)
+
+
 
 
 
