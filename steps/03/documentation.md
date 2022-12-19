@@ -55,7 +55,21 @@ The invoice model automates processing of invoices to extracts customer name, bi
 The receipt model scans sales receipts for merchant name, dates, line items, quantities, and totals from printed and handwritten receipts. Receipts can be of various formats and quality including printed and handwritten receipts.
 
 ### Receipt model in Form Recognizer Studio
-to-do
+1. In the Form Recognizer Studio, click _Try it now_ on the _Receipts_ card to use the model.
+![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.1.png)
+
+2. Click on the _receipt-with-tips.jpg_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model extracts printed text fields such as _MerchantAddress_, _MerchantName_, _MerchantPhoneNumber_, etc., aswell as handwritten text fields such as _Tip_ and _Total_ from the receipt. 
+![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.2.png)
+
+3. Go to the _Result_ tab to view the JSON output. 
+    1. The _Items_ field is extracted as an array of objects. Each object containing sub-fields like _Description_, _Quantity_ and _TotalPrice_. 
+    ![JSON output - Items aray](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.3.png)
+
+    2. Handwritten areas are identified through _spans_ property under the _styles_ collection, The value within the areas are extracted as fields such as _Tip_ and _Total_ under _fields_ property.
+    ![JSON output - styles](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.4.png)
+    ![JSON output - fields](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.5.png)
+
+
 
 ## Identity document (ID) model
 The Identity document (ID) model analyzes and extracts key information from identity documents such as US Drivers Licenses (all 50 states and District of Columbia), international passport biographical pages, US state IDs, social security cards, and permanent resident cards and more.
