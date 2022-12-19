@@ -75,7 +75,15 @@ The receipt model scans sales receipts for merchant name, dates, line items, qua
 The Identity document (ID) model analyzes and extracts key information from identity documents such as US Drivers Licenses (all 50 states and District of Columbia), international passport biographical pages, US state IDs, social security cards, and permanent resident cards and more.
 
 ### Identity document (ID) model in Form Recognizer Studio
-to-do
+1. In the Form Recognizer Studio, click _Try it now_ on the _Identity documents_ card to use the model.
+![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/4.1.png)
+
+2. Click on the _id-license.png_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model recognizes the document type to be of _idDocument.driverLicense_ and extracts fields specifc to the driver license such as _Address_, _CountryRegion_, _DateOfBirth_ and more.
+![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/4.2.png)
+
+3. Go to the _Result_ tab to view the JSON output. The extracted fields are under the _fields_ property. Each field has its respective _value_, _boundingRegions_, _spans_ and _confidence_.
+![JSON output](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/4.3.png)
+
 
 ## Business card model
 The Business card model analyzes printed business cards and extracts key information such as first name, last name, company name, email address, and phone number from business card images.
