@@ -65,10 +65,10 @@ The receipt model scans sales receipts for merchant name, dates, line items, qua
     1. The _Items_ field is extracted as an array of objects. Each object containing sub-fields like _Description_, _Quantity_ and _TotalPrice_. 
     ![JSON output - Items aray](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.3.png)
 
-    2. Handwritten areas are identified through _spans_ property under the _styles_ collection, The value within the areas are extracted as fields such as _Tip_ and _Total_ under _fields_ property.
-    ![JSON output - styles](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.4.png)
-    ![JSON output - fields](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.5.png)
-
+    2. Handwritten areas are identified through _spans_ property under the _styles_ collection. 
+    ![JSON output - styles](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.5.png)
+    The value within the areas are extracted as fields such as _Tip_ and _Total_ under _fields_ property.
+    ![JSON output - fields](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03/assets/3.4.png)
 
 
 ## Identity document (ID) model
