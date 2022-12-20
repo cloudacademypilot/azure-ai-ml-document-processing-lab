@@ -39,10 +39,13 @@ Your training set will consist of structured documents where the formatting and 
 ![Custom model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.1.png)
 
 2. On the create project dialog, provide a name for your project, optionally a description, and select continue.
+![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.2.png)
 
 3. On the next step in the workflow, choose your Form Recognizer resource before you select continue.
+![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.3.png)
 
-4. Next select the storage account you used to upload your custom model training dataset. The Folder path should be empty if your training documents are in the root of the container. If your documents are in a subfolder, enter the relative path from the container root in the Folder path field. Once your storage account is configured, select continue.
+4. Next select the storage account containing your custom model training dataset. The Folder path should be empty if your training documents are in the root of the container. If your documents are in a subfolder, enter the relative path from the container root in the Folder path field. Once your storage account is configured, select continue.
+![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.4.png)
 
 5. Finally, review your project settings and select Create Project to create a new project. You should now be in the labeling window and see the files in your dataset listed.
 
