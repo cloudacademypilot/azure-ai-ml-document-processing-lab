@@ -28,10 +28,62 @@ Language support | Multiple language support | United States English (en-US) lan
 
 * Build custom models
 
-## Template (Custom form) models
+## Build and train a Template (Custom form) models
 The custom template or custom form model relies on a consistent visual template to extract the labeled data. The accuracy of your model is affected by variances in the visual structure of your documents. Structured forms such as questionnaires or applications are examples of consistent visual templates.
 
-Your training set will consist of structured documents where the formatting and layout are static and constant from one document instance to the next. Custom template models support key-value pairs, selection marks, tables, signature fields, and regions. Template models and can be trained on documents in any of the supported languages.
+Your training set will consist of structured documents where the formatting and layout are static and constant from one document instance to the next. Form Recognizer models require as few as five training documents to get started. If you have at least five documents, you can get started training a custom model. Custom template models support key-value pairs, selection marks, tables, signature fields, and regions. Template models and can be trained on documents in any of the supported languages.
+
+
+### Create a project in the Form Recognizer Studio
+1. In the Studio, select the _Custom models_ tile, on the custom models page and select the _Create a project_ button.
+![Custom model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.1.png)
+
+2. On the create project dialog, provide a name for your project, optionally a description, and select continue.
+
+3. On the next step in the workflow, choose your Form Recognizer resource before you select continue.
+
+4. Next select the storage account you used to upload your custom model training dataset. The Folder path should be empty if your training documents are in the root of the container. If your documents are in a subfolder, enter the relative path from the container root in the Folder path field. Once your storage account is configured, select continue.
+
+5. Finally, review your project settings and select Create Project to create a new project. You should now be in the labeling window and see the files in your dataset listed.
+
+### Label your data
+1. To start labeling your dataset, create your first field by selecting the plus (➕) button on the top-right of the screen to select a field type.
+
+2. Enter a name for the field.
+
+3. To assign a value to the field, choose a word or words in the document and select the field in either the dropdown or the field list on the right navigation bar. You'll see the labeled value below the field name in the list of fields.
+
+4. Repeat the process for all the fields you wish to label for your dataset.
+
+5. Label the remaining documents in your dataset by selecting each document and selecting the text to be labeled.
+
+6. You now have all the documents in your dataset labeled. If you look at the storage account, you'll find a .labels.json and .ocr.json files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
+
+### Train your model
+1. On the train model dialog, provide a unique model ID and, optionally, a description. The model ID accepts a string data type.
+
+2. For the build mode, select _Template_.
+
+3. Select Train to initiate the training process.
+
+4. Template models train in a few minutes.
+
+5. Navigate to the Models menu to view the status of the train operation.
+
+### Test the model
+1. Select the model and select on the Test button.
+
+2. Select the + Add button to select a file to test the model.
+
+3. With a file selected, choose the Analyze button to test the model.
+
+4. The model results are displayed in the main window and the fields extracted are listed in the right navigation bar.
+
+5. Validate your model by evaluating the results for each field.
+
+6. The right navigation bar also has the sample code to invoke your model and the JSON results from the API.
+
+Congratulations you've trained a custom model in the Form Recognizer Studio!
 
 ## Template (Custom form) models
 The custom neural (custom document) model uses deep learning models and base model trained on a large collection of documents. This model is then fine-tuned or adapted to your data when you train the model with a labeled dataset. Custom neural models support structured, semi-structured, and unstructured documents to extract fields. Custom neural models currently support English-language documents. 
