@@ -63,7 +63,7 @@ To assign a _selection mark_ field type, draw a rectangle over the field along w
 ![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.4.png)
 
 4. Repeat the process for all the fields you wish to label for your dataset.
-![Labelling](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.4.png)
+![Labelling](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.5.png)
 
 5. Label the remaining documents in your dataset by selecting each document and selecting the text to be labeled.
 
