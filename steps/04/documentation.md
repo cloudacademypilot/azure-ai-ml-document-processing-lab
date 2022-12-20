@@ -63,11 +63,12 @@ To assign a _selection mark_ field type, draw a rectangle over the field along w
 ![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.4.png)
 
 4. Repeat the process for all the fields you wish to label for your dataset.
+![Labelling](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.4.png)
 
 5. Label the remaining documents in your dataset by selecting each document and selecting the text to be labeled.
 
-6. You now have all the documents in your dataset labeled. If you look at the storage account, you'll find a .labels.json and .ocr.json files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
-![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.4.png)
+6. You now have all the documents in your dataset labeled. Click _Train_ present on the top right corner. If you look at the storage account, you'll find a .labels.json and .ocr.json files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
+![SA JSON files](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/2.6.png)
 
 ### Train your model
 1. On the train model dialog, provide a unique model ID and, optionally, a description. The model ID accepts a string data type.
