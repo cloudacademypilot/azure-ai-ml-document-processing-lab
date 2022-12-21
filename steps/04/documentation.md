@@ -74,17 +74,21 @@ To assign a _selection mark_ field type, draw a rectangle over the field along w
 1. On the train model dialog, provide a unique model ID and, optionally, a description. The model ID accepts a string data type.
 
 2. For the build mode, select _Template_.
+![Train dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/3.1.png)
 
 3. Select Train to initiate the training process.
 
 4. Template models train in a few minutes.
 
 5. Navigate to the Models menu to view the status of the train operation.
+![Models menu](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/3.2.png)
 
 ### Test the model
 1. Select the model and select on the Test button.
+![Test dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.1.png)
 
-2. Select the + Add button to select a file to test the model.
+2. Select _Fetch from URL_ to fetch a file from the storage account to test the model.
+![Fetch doc](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04/assets/4.2.png)
 
 3. With a file selected, choose the Analyze button to test the model.
 
