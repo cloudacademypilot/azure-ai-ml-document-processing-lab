@@ -27,7 +27,7 @@ The following Form Recognizer service features are available in the Studio.
 
 1.  Go to the [Azure](https://portal.azure.com) portal and search _Applied AI services_. Click _Create_ on the Form Recognizer card.
 
-![01-Applied AI services Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01/assets/01.png)
+![01-Applied AI services Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.png)
 
 2. Enter the following details under the _Basics_ tab. Rest, keep it as is.
 * Subscription - Your subscription
@@ -36,13 +36,13 @@ The following Form Recognizer service features are available in the Studio.
 * Name - An unique name
 * Pricing tier - Standard S0
 
-![02-Basic tab](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01/assets/02.png)
+![02-Basic tab](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/02.png)
 
 3. Under _Review + create_, click _Create_.
 
 4. Go to your Form Recognizer resource and click on _Try it_ on the Form Recognizer Studio card to use the Studio.
 
-![03-Form Recognizer Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01/assets/03.png)
+![03-Form Recognizer Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/03.png)
 
 
 ## Exercise 2: Learn about the different models in Form Recognizer Studio
@@ -71,35 +71,42 @@ Composed models | Combine several custom models into a single model to automate 
 
 The Read API analyzes and extracts lines, words, their locations, detected languages, and handwritten style if detected.
 #### _Sample document processed using the Form Recognizer Studio_:
-![Read model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01/assets/01.1.png)
+![Read model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.1.png)
 
 ### Layout analysis
 The Layout analysis model analyzes and extracts text, tables, selection marks, and other structure elements like titles, section headings, page headers, page footers, and more.
 #### _Sample document processed using the Form Recognizer Studio_:
+![Layout model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.2.png)
 
 ### General document
 The general document model is ideal for extracting common key-value pairs from forms and documents. It’s a pre-trained model and can be directly invoked via the REST API and the SDKs. You can use the general document model as an alternative to training a custom model.
 #### _Sample document processed using the Form Recognizer Studio_:
+![General document model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.3.png)
 
 ### W-2
 The W-2 form model extracts key information reported in each box on a W-2 form. The model supports standard and customized forms from 2018 to the present, including single and multiple forms on one page.
 #### _Sample document processed using the Form Recognizer Studio_:
+![W-2 model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.4.png)
 
 ### Invoice
 The invoice model automates processing of invoices to extracts customer name, billing address, due date, and amount due, line items and other key data. Currently, the model supports English, Spanish, German, French, Italian, Portuguese, and Dutch invoices.
 #### _Sample document processed using the Form Recognizer Studio_:
+![Invoice model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.5.png)
 
 ### Receipt
 Use the receipt model to scan sales receipts for merchant name, dates, line items, quantities, and totals from printed and handwritten receipts. The version v3.0 also supports single-page hotel receipt processing.
 #### _Sample document processed using the Form Recognizer Studio_:
+![Receipt model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.6.png)
 
 ### Identity document (ID)
 Use the Identity document (ID) model to process U.S. Driver's Licenses (all 50 states and District of Columbia) and biographical pages from international passports (excluding visa and other travel documents) to extract key fields.
 #### _Sample document processed using the Form Recognizer Studio_:
+![ID model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.7.png)
 
 ### Business card
 Use the business card model to scan and extract key information from business card images.
 #### _Sample document processed using the Form Recognizer Studio_:
+![Business card model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.8.png)
 
 ### Custom models
 Custom document models analyze and extract data from forms and documents specific to your business. They are trained to recognize form fields within your distinct content and extract key-value pairs and table data. You only need five examples of the same form type to get started.
