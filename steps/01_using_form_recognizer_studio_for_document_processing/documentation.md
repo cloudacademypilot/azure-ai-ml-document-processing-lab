@@ -26,7 +26,6 @@ The following Form Recognizer service features are available in the Studio.
 ## Exercise 1: Create a Form Recognizer resource
 
 1.  Go to the [Azure](https://portal.azure.com) portal and search _Applied AI services_. Click _Create_ on the Form Recognizer card.
-
 ![01-Applied AI services Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.png)
 
 2. Enter the following details under the _Basics_ tab. Rest, keep it as is.
@@ -35,13 +34,11 @@ The following Form Recognizer service features are available in the Studio.
 * Region - Central US 
 * Name - An unique name
 * Pricing tier - Standard S0
-
 ![02-Basic tab](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/02.png)
 
 3. Under _Review + create_, click _Create_.
 
 4. Go to your Form Recognizer resource and click on _Try it_ on the Form Recognizer Studio card to use the Studio.
-
 ![03-Form Recognizer Overview page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/03.png)
 
 
@@ -68,7 +65,6 @@ Custom models | Extract data from forms and documents specific to your business.
 Composed models | Combine several custom models into a single model to automate processing of diverse document types with a single composed model.
 
 ### Read OCR
-
 The Read API analyzes and extracts lines, words, their locations, detected languages, and handwritten style if detected.
 #### _Sample document processed using the Form Recognizer Studio_:
 ![Read model sample](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/01.1.png)
