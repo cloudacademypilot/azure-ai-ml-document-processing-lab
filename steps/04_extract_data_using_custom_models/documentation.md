@@ -103,7 +103,15 @@ To create a _Table_ field, select _Table_ from the dropdown. Name the table, set
 6. The right navigation bar also has the sample code to invoke your model and the JSON results from the API.
 
 ## Build and train a Neural (Custom document) models
-The custom neural (custom document) model uses deep learning models and base model trained on a large collection of documents. This model is then fine-tuned or adapted to your data when you train the model with a labeled dataset. Custom neural models support structured, semi-structured, and unstructured documents to extract fields. Custom neural models currently support English-language documents. 
+The custom neural (custom document) model uses deep learning models and base model trained on a large collection of documents. This model is then fine-tuned or adapted to your data when you train the model with a labeled dataset. Custom neural models support structured, semi-structured, and unstructured documents to extract fields. Custom neural models currently support English-language documents. The sample invoices that you will be analyzing in this lab will differ from one another in layout. 
+Sample  | Field Alignment | Table Alignment
+------------- | ------------- | -------------
+invoice1.pdf | Left | Left
+invoice2.pdf | Top | Top
+invoice3.pdf | Top | Left
+invoice4.pdf | Left | Top
+invoice5.pdf | Left | Left
+test-invoice.pdf | Mixed | Left
 
 ### Create a project in the Form Recognizer Studio
 1. In the Studio, select the _Custom models_ tile, on the custom models page and select the _Create a project_ button.
