@@ -33,7 +33,7 @@ The following Form Recognizer service features are available in the Studio.
 * Resource group - Your resource group
 * Region - Central US 
 * Name - An unique name
-* Pricing tier - Standard S0
+* Pricing tier - Free tier (F0)
 ![02-Basic tab](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/01_using_form_recognizer_studio_for_document_processing/assets/02.png)
 
 3. Under _Review + create_, click _Create_.
