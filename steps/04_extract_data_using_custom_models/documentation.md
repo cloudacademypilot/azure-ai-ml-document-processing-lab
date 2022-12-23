@@ -44,7 +44,7 @@ Your training set will consist of structured documents where the formatting and 
 3. On the next step in the workflow, choose your Form Recognizer resource before you select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next select the storage account containing your custom model training dataset. Enter _custom-template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next select the storage account containing your custom model training dataset. Enter _fr-assets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
 5. Finally, review your project settings and select Create Project to create a new project. You should now be in the labeling window and see the files in your dataset listed.
@@ -91,7 +91,7 @@ To create a _Table_ field, select _Table_ from the dropdown. Name the table, set
 1. Select the model and select on the Test button.
 ![Test dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/4.1.png)
 
-2. Select _Fetch from URL_ to fetch the test file from the storage account to test the model. The test file will be in the _custom-template-model-test-dataset_. Generate the SAS URL for the file and paste it in the dialog box.
+2. Select _Fetch from URL_ to fetch the test file from the storage account to test the model. The test file will be in the _template-model-test-dataset_ folder. Generate the SAS URL for the file and paste it in the dialog box.
 
 3. With a file selected, choose the Analyze button to test the model.
 
@@ -123,7 +123,7 @@ test-invoice.pdf | Mixed | Left
 3. On the next step in the workflow, choose your Form Recognizer resource before you select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next select the storage account containing your custom model training dataset. Enter _custom-neural-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next select the storage account containing your custom model training dataset. Enter _fr-assets_ in the _Blob container_ field. Enter _neural-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
 5. Finally, review your project settings and select Create Project to create a new project. You should now be in the labeling window and see the files in your dataset listed.
@@ -166,7 +166,7 @@ To create a _Table_ field, select _Table_ from the dropdown. Name the table, set
 1. Select the model and select on the Test button.
 ![Test dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/8.1.png)
 
-2. Select _Fetch from URL_ to fetch the test invoice from the storage account to test the model. The test file will be in the _custom-neural-model-test-dataset_. Generate the SAS URL for the file and paste it in the dialog box.
+2. Select _Fetch from URL_ to fetch the test invoice from the storage account to test the model. The test file will be in the _neural-model-test-dataset_ folder. Generate the SAS URL for the file and paste it in the dialog box.
 
 3. With a file selected, choose the Analyze button to test the model.
 
