@@ -8,7 +8,7 @@ Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 
 $Uri = "https://sa1ahoode.blob.core.windows.net/form-recognizer-assets/sample-invoice1.pdf";
 $SrcFileName = "sample-invoice1.pdf";
-$DestFileName = "sample-invoice1.pdf";
+$DestFileName = "test1/sample-invoice1.pdf";
 $DestContainer = "test-upload-script";
 
 try {
