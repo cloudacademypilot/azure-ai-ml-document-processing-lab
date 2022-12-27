@@ -22,6 +22,13 @@
             "metadata": {
                 "description": "Specifies the name of the blob container."
             }
+        },
+       "identityName": {
+            "defaultValue": "PostDeploymentScriptuserAssignedName",
+            "type": "String",
+            "metadata": {
+                "description": "Name of identity"
+            }
         }
     },
     "functions": [],
@@ -58,12 +65,24 @@
              "name": "uploadFiles",
              "location": "[resourceGroup().location]",
              "kind": "AzureCLI",
+             "identity": {
+                "type": "UserAssigned",
+                "userAssignedIdentities": {
+                    "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', parameters('identityName'))]": {}
+                },
              "properties": {
                  "azCliVersion": "2.42.0",
                  "primaryScriptUri": "https://raw.githubusercontent.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/master/environments/env1/scripts/uploadFiles.ps1",
                  "cleanupPreference": "Always",
                  "arguments": "[concat('-ResourceGroupName ', resourceGroup().name, ' -StorageAccountName ', parameters('storageAccountName'))]"
              }
+        }
+        ,
+        {
+            "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "apiVersion": "2018-11-30",
+            "name": "[parameters('identityName')]",
+            "location": "[resourceGroup().location]" 
         }
     ],
     "outputs": {}
