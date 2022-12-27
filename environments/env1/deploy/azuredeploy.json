@@ -61,7 +61,7 @@
         ,
         {
              "type": "Microsoft.Resources/deploymentScripts",
-             "apiVersion": "2019-10-01-preview",
+             "apiVersion": "2020-10-01",
              "name": "uploadFiles",
              "location": "[resourceGroup().location]",
              "kind": "AzureCLI",
@@ -76,6 +76,7 @@
                          },
             "properties": {
                  "azCliVersion": "2.42.0",
+                 "retentionInterval": "P1D",
                  "primaryScriptUri": "https://raw.githubusercontent.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/master/environments/env1/scripts/uploadFiles.ps1",
                  "cleanupPreference": "Always",
                  "arguments": "[concat('-ResourceGroupName ', resourceGroup().name, ' -StorageAccountName ', parameters('storageAccountName'))]"
