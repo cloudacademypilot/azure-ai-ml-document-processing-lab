@@ -64,7 +64,7 @@
              "apiVersion": "2020-10-01",
              "name": "uploadFiles",
              "location": "[resourceGroup().location]",
-             "kind": "AzureCLI",
+             "kind": "AzurePowerShell",
              "dependsOn": [
               "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', parameters('identityName'))]"
                           ],
@@ -75,10 +75,10 @@
                 }
                          },
             "properties": {
-                 "azCliVersion": "2.42.0",
+                 "azPowerShellVersion": "7.2.4",
                  "retentionInterval": "P1D",
                  "primaryScriptUri": "https://raw.githubusercontent.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/master/environments/env1/scripts/uploadFiles.ps1",
-                 "cleanupPreference": "Always",
+                 "cleanupPreference": "OnSuccess",
                  "arguments": "[concat('-ResourceGroupName ', resourceGroup().name, ' -StorageAccountName ', parameters('storageAccountName'))]"
                           }
         }
