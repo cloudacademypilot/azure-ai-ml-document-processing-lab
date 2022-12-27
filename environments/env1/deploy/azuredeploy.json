@@ -65,6 +65,9 @@
              "name": "uploadFiles",
              "location": "[resourceGroup().location]",
              "kind": "AzureCLI",
+             "dependsOn": [
+              "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', parameters('identityName'))]"
+                          ],
              "identity": {
                 "type": "UserAssigned",
                 "userAssignedIdentities": {
