@@ -94,7 +94,7 @@ To create a _Table_ field, select _Table_ from the dropdown. Name the table, set
 1. Select the model and select on the Test button.
 ![Test dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/4.1.png)
 
-2. Select _Fetch from URL_ to fetch the test file from the storage account to test the model. The test file will be in the _template-model-test-dataset_ folder. Generate the SAS URL for the file and paste it in the dialog box.
+2. Select _Fetch from URL_ to fetch the test file from the storage account to test the model. The test file _filled-form.png_ will be in the _template-model-test-dataset_ folder in the storage account. Copy the URL for the file and paste it in the dialog box.
 
 3. With a file selected, choose the Analyze button to test the model.
 
