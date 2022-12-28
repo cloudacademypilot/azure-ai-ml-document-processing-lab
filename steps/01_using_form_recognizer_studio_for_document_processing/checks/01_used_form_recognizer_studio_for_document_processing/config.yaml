@@ -1,0 +1,6 @@
+title: Used Form Recognizer Studio for Document Processing
+internal_name: Used Form Recognizer Studio for Document Processing
+vendor: azure
+runtime: python3.8
+memory: 128
+timeout: 10
