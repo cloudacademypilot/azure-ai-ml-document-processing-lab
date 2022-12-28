@@ -62,6 +62,7 @@ Your training set will consist of structured documents where the formatting and 
 3. To assign a _Field_, draw a rectangle over the field in the form using _Region_ and select the field in either the dropdown or the field list on the right navigation bar. You'll see the labeled value below the field name in the list of fields.
 ![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.3.png)
 To assign a _Selection mark_, draw a rectangle over the field along with its respective checkbox in the form using _Region_ and select the field in either the dropdown or the field list on the right navigation bar. You'll see the labeled value below the field name in the list of fields.
+![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.1.2.png)
 ![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.4.png)
 To assign a _Signature_, draw a rectangle over the signature box in the form using _Region_ and select the field in either the dropdown or the field list on the right navigation bar. You'll see the labeled value below the field name in the list of fields.
 ![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.5.png)
