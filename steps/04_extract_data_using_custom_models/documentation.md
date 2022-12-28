@@ -40,13 +40,13 @@ Your training set will consist of structured documents where the formatting and 
 ![Custom model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.1.1.png)
 ![Custom model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.1.png)
 
-2. On the create project dialog, provide a name for your project, optionally a description, and select continue.
+2. On the Enter project details page, provide a name for your project, optionally a description, and select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.2.png)
 
-3. On the next step in the workflow, choose your Form Recognizer resource before you select continue.
+3. On the next step, under Configure service resource page, select your subscription, resource group and your Form Recognizer resource and select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next select the storage account containing your custom model training dataset. Enter _fr-assets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next under Connect training data source page, select your subscription, resource group and the storage account containing your custom model training dataset. Enter _fr-assets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
 5. Finally, review your project settings and select Create Project to create a new project. You should now be in the labeling window and see the files in your dataset listed.
