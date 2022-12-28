@@ -28,7 +28,7 @@ Form W-2, also known as the Wage and Tax Statement, is sent by an employer to ea
 1. In the Form Recognizer Studio, click _Try it now_ on the _W-2_ card to use the model.
 ![FR Studio landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/1.1.png)
 
-2. Click on the __ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model extracts all the fields in the form. Some fields are grouped together to form a logical entity such as Employer and Employee information. 
+2. Click on the w2-single.png sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model extracts all the fields in the form. Some fields are grouped together to form a logical entity such as Employer and Employee information. 
 ![FR Studio landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/1.2.png)
 
 3. Go to the _Result_ tab to view the JSON output. The output has all the fields along with the _confidence_.
