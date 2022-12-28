@@ -36,6 +36,8 @@ Your training set will consist of structured documents where the formatting and 
 
 ### Create a project in the Form Recognizer Studio
 1. In the Studio, select the _Custom models_ tile, on the custom models page and select the _Create a project_ button.
+
+![Custom model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.1.1.png)
 ![Custom model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.1.png)
 
 2. On the create project dialog, provide a name for your project, optionally a description, and select continue.
