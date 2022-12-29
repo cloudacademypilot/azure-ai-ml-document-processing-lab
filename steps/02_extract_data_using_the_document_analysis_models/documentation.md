@@ -105,7 +105,7 @@ The following illustration shows the typical components in an image of a sample 
             pageFooter | Text near the bottom edge of the page
             pageNumber | Page number
         
-        ![Paragraph extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/2.4.png)
+         ![Paragraph extraction](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/2.4.png)
     
     2. Lines and words extraction: The model in extracts print and handwritten style text as _lines_ and _words_. The model outputs bounding _polygon_ coordinates and _confidence_ for the extracted words. The _styles_ collection includes any handwritten style for lines if detected along with the spans pointing to the associated text. This feature applies to supported handwritten languages.
     
