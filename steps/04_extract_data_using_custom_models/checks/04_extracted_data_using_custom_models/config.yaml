@@ -1,0 +1,6 @@
+title: Extract Data using Custom Models
+internal_name: Extract Data using Custom Models
+vendor: azure
+runtime: python3.8
+memory: 128
+timeout: 10
