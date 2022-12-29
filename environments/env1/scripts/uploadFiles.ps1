@@ -18,7 +18,8 @@ $Uri = @(
     "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy (3).png",
     "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy (4).png",
     "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy.png",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1.png"
+    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1.png",
+    "https://sa1ahoode.blob.core.windows.net/form-recognizer-assets/read model/resume_example3.png"
 );
 $SrcFileName = @(
     "test-invoice.pdf",
@@ -32,7 +33,8 @@ $SrcFileName = @(
     "form1 - Copy (3).png",
     "form1 - Copy (4).png",
     "form1 - Copy.png",
-    "form1.png"
+    "form1.png",
+    "resume_example3.png"
 );
 $DestFileName = @(
     "neural-model-test-dataset/test-invoice.pdf",
@@ -46,7 +48,8 @@ $DestFileName = @(
     "template-model-training-dataset/form1 - Copy (3).png",
     "template-model-training-dataset/form1 - Copy (4).png",
     "template-model-training-dataset/form1 - Copy.png",
-    "template-model-training-dataset/form1.png"
+    "template-model-training-dataset/form1.png",
+    "resume_example3.png"
 
 );
 $DestContainer = "fr-assets";
