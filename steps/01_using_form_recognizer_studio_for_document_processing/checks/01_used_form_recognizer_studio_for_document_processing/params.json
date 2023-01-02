@@ -1,4 +1,4 @@
 {
-    "endpoint": "https://fr-ahoode.cognitiveservices.azure.com/",
-    "key": "47edc0dca7904238a6eb1c04525717ca"
+    "subscription_id": "cbb956ec-6c04-42ae-8428-91d91154f780",
+    "resource_group_name": "az-ahoode-rg"
 }
