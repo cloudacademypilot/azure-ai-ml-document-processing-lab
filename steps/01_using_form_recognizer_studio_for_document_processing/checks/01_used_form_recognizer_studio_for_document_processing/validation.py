@@ -13,4 +13,12 @@ print("Our account has {} custom models, and we can have at most {} custom model
 # Here we get a paged list of all of our models
 models = document_model_admin_client.list_document_models()
 for model in models:
-    print("{} | {}".format(model.model_id, model.description))
+    if model.model_id == "template-model":
+        print("Custom Template Model created")
+    else:
+        print("Custom Template Model not created")
+
+    if model.model_id == "neural-model":
+        print("Custom Neural Model created")
+    else:
+        print("Custom Neural Model not created")
