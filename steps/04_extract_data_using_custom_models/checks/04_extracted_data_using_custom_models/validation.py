@@ -8,8 +8,10 @@ from azure.mgmt.subscription import SubscriptionClient
 
 def handler():
     try:
-        subscription_id = "cbb956ec-6c04-42ae-8428-91d91154f780"
-        resource_group_name = "az-ahoode-rg"
+        with open("steps/04_extract_data_using_custom_models/checks/04_extracted_data_using_custom_models/params.json") as f:
+            params = json.load(f)
+        subscription_id = params['subscription_id']
+        resource_group_name = params['resource_group_name']
         credential = AzureCliCredential()
         resource_client = ResourceManagementClient(credential, subscription_id)
         resource_list = resource_client.resources.list_by_resource_group(resource_group_name, expand = "createdTime,changedTime")
@@ -18,9 +20,9 @@ def handler():
             if(resource.type == 'Microsoft.CognitiveServices/accounts'):
                 resourcename = resource.name
                 if(resourcename):
-                    print('Form Recognizer Studio is Created')
+                    print('Form Recognizer Studio is created')
                 else:
-                    print('Form Recognizer Studio is not Created')
+                    print('Form Recognizer Studio is not created')
     except Exception as e:
         logging.error(e)
         
