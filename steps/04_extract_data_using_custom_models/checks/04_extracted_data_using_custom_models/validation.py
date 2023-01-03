@@ -3,7 +3,7 @@ from azure.core.credentials import AzureKeyCredential
 from azure.core.exceptions import ResourceNotFoundError
 import json
 
-with open("steps/01_using_form_recognizer_studio_for_document_processing/checks/01_used_form_recognizer_studio_for_document_processing/params.json") as f:
+with open("steps/04_extract_data_using_custom_models/checks/04_extracted_data_using_custom_models/params.json") as f:
     params = json.load(f)
 
 endpoint = params['endpoint']
@@ -16,10 +16,8 @@ print("Our account has {} custom models, and we can have at most {} custom model
 
 # Here we get a paged list of all of our models
 models = list(document_model_admin_client.list_document_models())
-model_ids = list()
 
-for model in models:
-    model_ids.append(model.model_id)
+model_ids = [model.model_id for model in models if (model.model_id == "template-model") or (model.model_id == "neural-model")]
 
 if "template-model" in model_ids:
     print("Custom Template Model created")
