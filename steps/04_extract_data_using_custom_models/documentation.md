@@ -101,7 +101,7 @@ Your training set will consist of structured documents where the formatting and 
 
 ### Train your model
 
-1. On the train model dialog, provide a unique model ID and, optionally, a description. The model ID accepts a string data type.
+1. On the train model dialog, enter _template-model_ as model ID and, optionally, a description. The model ID accepts a string data type.
 
 2. For the build mode, select _Template_.
 
@@ -198,7 +198,7 @@ test-invoice.pdf | Mixed | Left
 
 ### Train your model
 
-1. On the train model dialog, provide a unique model ID and, optionally, a description. The model ID accepts a string data type.
+1. On the train model dialog, enter _neural-model_ as model ID and, optionally, a description. The model ID accepts a string data type.
 
 2. For the build mode, select _Neural_.
 
