@@ -8,7 +8,7 @@ from azure.mgmt.subscription import SubscriptionClient
 
 def handler():
     try:
-        with open("steps/04_extract_data_using_custom_models/checks/04_extracted_data_using_custom_models/params.json") as f:
+        with open("steps/01_using_form_recognizer_studio_for_document_processing/checks/01_used_form_recognizer_studio_for_document_processing/params.json") as f:
             params = json.load(f)
         subscription_id = params['subscription_id']
         resource_group_name = params['resource_group_name']
