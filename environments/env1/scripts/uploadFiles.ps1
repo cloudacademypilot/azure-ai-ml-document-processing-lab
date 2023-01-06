@@ -7,20 +7,22 @@ Write-Host "File uploading...."
 Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 
 $Uri = @(
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-test-dataset/test-invoice.pdf",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-training-dataset/invoice1.pdf",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-training-dataset/invoice2.pdf",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-training-dataset/invoice3.pdf",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-training-dataset/invoice4.pdf",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-training-dataset/invoice5.pdf",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-test-dataset/filled-form.png",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy (2).png",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy (3).png",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy (4).png",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1 - Copy.png",
-    "https://sa1ahoode.blob.core.windows.net/fr-datasets/template-model-training-dataset/form1.png",
-    "https://sa1ahoode.blob.core.windows.net/form-recognizer-assets/read model/resume_example3.png"
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/neural-model-test-dataset/test-invoice.pdf",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/neural-model-training-dataset/invoice1.pdf",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/neural-model-training-dataset/invoice2.pdf",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/neural-model-training-dataset/invoice3.pdf",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/neural-model-training-dataset/invoice4.pdf",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/neural-model-training-dataset/invoice5.pdf",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/template-model-test-dataset/filled-form.png",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/template-model-training-dataset/form1.png",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/template-model-training-dataset/form2.png",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/template-model-training-dataset/form3.png",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/template-model-training-dataset/form4.png",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/template-model-training-dataset/form5.png",
+    "https://csalabsshrdstrg1.blob.core.windows.net/aimllabs/read-model-test-dataset/resume_example3.png"
 );
+
+
 $SrcFileName = @(
     "test-invoice.pdf",
     "invoice1.pdf",
@@ -29,11 +31,11 @@ $SrcFileName = @(
     "invoice4.pdf",
     "invoice5.pdf",
     "filled-form.png",
-    "form1 - Copy (2).png",
-    "form1 - Copy (3).png",
-    "form1 - Copy (4).png",
-    "form1 - Copy.png",
     "form1.png",
+    "form2.png",
+    "form3.png",
+    "form4.png",
+    "form5.png",
     "resume_example3.png"
 );
 $DestFileName = @(
@@ -44,15 +46,15 @@ $DestFileName = @(
     "neural-model-training-dataset/invoice4.pdf",
     "neural-model-training-dataset/invoice5.pdf",
     "template-model-test-dataset/filled-form.png",
-    "template-model-training-dataset/form1 - Copy (2).png",
-    "template-model-training-dataset/form1 - Copy (3).png",
-    "template-model-training-dataset/form1 - Copy (4).png",
-    "template-model-training-dataset/form1 - Copy.png",
     "template-model-training-dataset/form1.png",
-    "resume_example3.png"
+    "template-model-training-dataset/form2.png",
+    "template-model-training-dataset/form3.png",
+    "template-model-training-dataset/form4.png",
+    "template-model-training-dataset/form5.png",
+    "read-model-test-dataset/resume_example3.png"
 
 );
-$DestContainer = "fr-assets";
+$DestContainer = "aimllabs";
 
 try {
     $StorageAccountKey = Get-AzStorageAccountKey -ResourceGroupName $ResourceGroupName -Name $StorageAccountName;
