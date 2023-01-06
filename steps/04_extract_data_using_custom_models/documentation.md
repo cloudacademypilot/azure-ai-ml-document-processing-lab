@@ -53,7 +53,7 @@ Your training set will consist of structured documents where the formatting and 
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next under Connect training data source page, select your subscription, resource group and the storage account containing your custom model training dataset. Enter _fr-assets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next under Connect training data source page, select your subscription, resource group and the storage account containing your custom model training dataset. Enter _fr-datasets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
@@ -160,7 +160,7 @@ test-invoice.pdf | Mixed | Left
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next select the storage account containing your custom model training dataset. Enter _fr-assets_ in the _Blob container_ field. Enter _neural-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next select the storage account containing your custom model training dataset. Enter _fr-datasets_ in the _Blob container_ field. Enter _neural-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
