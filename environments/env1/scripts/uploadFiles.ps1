@@ -54,7 +54,7 @@ $DestFileName = @(
     "read-model-test-dataset/resume_example3.png"
 
 );
-$DestContainer = "aimllabs";
+$DestContainer = "fr-datasets";
 
 try {
     $StorageAccountKey = Get-AzStorageAccountKey -ResourceGroupName $ResourceGroupName -Name $StorageAccountName;

@@ -18,7 +18,7 @@
         },
         "containerName": {
             "type": "string",
-            "defaultValue": "fr-assets",
+            "defaultValue": "fr-datasets",
             "metadata": {
                 "description": "Specifies the name of the blob container."
             }
