@@ -27,7 +27,7 @@ Optical Character Recognition (OCR) for documents is optimized for large text-he
 
 ### OCR in Form Recognizer - Read model
 
-Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a higher resolution than Computer Vision Read and extracts print and handwritten text from PDF documents and scanned images. It detects paragraphs, text lines, words, locations, and languages. The read model is the underlying OCR engine for other Form Recognizer prebuilt models like Layout, General Document, Invoice, Receipt, Identity (ID) document, in addition to custom models.
+Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a higher resolution than Computer Vision Read and extracts print and handwritten text from PDF documents and scanned images. It detects paragraphs, text lines, words, locations, and languages. The read model is the underlying OCR engine for other Form Recognizer prebuilt models like Layout, General Document, Invoice, Receipt, and Identity (ID) document, in addition to custom models.
 
 ### Read model in Form Recognizer Studio
 
@@ -35,7 +35,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 
     ![FR Studio landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/1.1.png)
 
-2. Select a document of your choice either from the Storage Account through the _Fetch from URL_ option or upload a file from your local machine through the _Browse for a file_ option. You can also perform analysis on the samples already uploaded in the Studio. In this lab we will analyze the document present in the Storage Account.
+2. Select a document of your choice either from the Storage Account through the _Fetch from URL_ option or upload a file from your local machine through the _Browse for a file_ option. You can also perform analysis on the samples already uploaded in the Studio. In this lab, we will analyze the document present in the Storage Account.
 
     ![Read model page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/1.2.png)
 
@@ -47,7 +47,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 
     ![Fetch dialog box](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/1.4.png)
 
-5. To perform the analysis on the document, Click on _Analyze_. Upon completion, the result is displayed on the right. Hovering over the _Paragraph_ cards reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinates is displayed.
+5. To perform the analysis on the document, Click on _Analyze_. Upon completion, the result is displayed on the right. Hovering over the _Paragraph_ cards reveals their respective block. Beside the highlighted block, the extracted text along with the polygon coordinates is displayed.
 
     ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/1.5.png)
 
