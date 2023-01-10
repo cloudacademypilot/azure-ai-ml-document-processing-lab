@@ -53,7 +53,7 @@ Your training set will consist of structured documents where the formatting and 
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next under Connect training data source page, select your subscription, resource group and the storage account containing your custom model training dataset. Enter _fr-datasets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next, under Connect training data source page, select your subscription, resource group and the storage account containing your custom model training dataset. Enter _fr-datasets_ in the _Blob container_ field. Enter _template-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
@@ -85,7 +85,7 @@ Your training set will consist of structured documents where the formatting and 
 
     ![Select region](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.5.png)
 
-6. To create a _Table_ field, select _Table_ from the dropdown. Name the table, set the _Table type_ as _Fixed_, _Header type_ as _Column_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add a columns or rows by clicking on one of the existing ones. Rename all the columns and rows so as to match the table present in the form. Draw a rectangle over the cell you want to capture, then click on the respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
+6. To create a _Table_ field, select _Table_ from the dropdown. Name the table, set the _Table type_ as _Fixed_, _Header type_ as _Column_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add columns or rows by clicking on one of the existing ones. Rename all the columns and rows to match the table present in the form. Draw a rectangle over the cell you want to capture, then click on the respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
 
     ![Table field](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.6.png)
 
@@ -95,7 +95,7 @@ Your training set will consist of structured documents where the formatting and 
 
 8. Label the remaining documents in your dataset by selecting each document and selecting the text to be labeled.
 
-9. You now have all the documents in your dataset labeled. Click _Train_ present on the top right corner. If you look at the storage account, you'll find a _.labels.json_ and _.ocr.json_ files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
+9. You now have all the documents in your dataset labeled. Click _Train_ present in the top right corner. If you look at the storage account, you'll find a _.labels.json_ and _.ocr.json_ files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
 
     ![Train](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.8.png)
 
@@ -117,11 +117,11 @@ Your training set will consist of structured documents where the formatting and 
 
 ### Test the model
 
-1. Select the model and select on the Test button.
+1. Select the model and select the Test button.
 
     ![Test dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/4.1.png)
 
-2. Select _Fetch from URL_ to fetch the test file from the storage account to test the model. The test file _filled-form.png_ will be in the _template-model-test-dataset_ folder in the storage account. Copy the URL for the file and paste it in the dialog box.
+2. Select _Fetch from URL_ to fetch the test file from the storage account to test the model. The test file _filled-form.png_ will be in the _template-model-test-dataset_ folder in the storage account. Copy the URL for the file and paste it into the dialog box.
 
 3. With a file selected, choose the Analyze button to test the model.
 
@@ -160,7 +160,7 @@ test-invoice.pdf | Mixed | Left
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.3.png)
 
-4. Next select the storage account containing your custom model training dataset. Enter _fr-datasets_ in the _Blob container_ field. Enter _neural-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
+4. Next, select the storage account containing your custom model training dataset. Enter _fr-datasets_ in the _Blob container_ field. Enter _neural-model-training-dataset_ in the _Folder path_ field. Once your storage account is configured, select continue.
 
     ![Create project dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/1.4.png)
 
@@ -182,7 +182,7 @@ test-invoice.pdf | Mixed | Left
 
     ![Select word and assign field](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/6.3.png)
 
-4. To create a _Table_ field, select _Table_ from the dropdown. Name the table, set the _Table type_ as _Dynamic_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add or delete columns or rows by clicking on one of the existing ones. Rename all the columns and rows so as to match the table present in the form. To assign a value to the cell, choose a word or words in the invoice tables' cell and click on its respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
+4. To create a _Table_ field, select _Table_ from the dropdown. Name the table, set the _Table type_ as _Dynamic_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add or delete columns or rows by clicking on one of the existing ones. Rename all the columns and rows to match the table present in the form. To assign a value to the cell, choose a word or words in the invoice tables' cell and click on its respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
 
     ![Table field](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/6.4.png)
 
@@ -214,11 +214,11 @@ test-invoice.pdf | Mixed | Left
 
 ### Test the model
 
-1. Select the model and select on the Test button.
+1. Select the model and select the Test button.
 
     ![Test dialog](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/8.1.png)
 
-2. Select _Fetch from URL_ to fetch the test invoice from the storage account to test the model. The test file _test-invoice.pdf_ will be in the _neural-model-test-dataset_ folder. Copy the URL for the file from storage account and paste it in the dialog box.
+2. Select _Fetch from URL_ to fetch the test invoice from the storage account to test the model. The test file _test-invoice.pdf_ will be in the _neural-model-test-dataset_ folder. Copy the URL for the file from the storage account and paste it into the dialog box.
 
 3. With a file selected, choose the Analyze button to test the model.
 
