@@ -99,7 +99,7 @@ The W-2 form model extracts key information reported in each box on a W-2 form. 
 
 ### Invoice
 
-The invoice model automates processing of invoices to extracts customer name, billing address, due date, and amount due, line items and other key data. Currently, the model supports English, Spanish, German, French, Italian, Portuguese, and Dutch invoices.
+The invoice model automates processing of invoices to extract customer name, billing address, due date, and amount due, line items and other key data. Currently, the model supports English, Spanish, German, French, Italian, Portuguese, and Dutch invoices.
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
