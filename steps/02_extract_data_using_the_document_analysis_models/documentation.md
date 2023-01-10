@@ -130,7 +130,7 @@ The general document model combines powerful Optical Character Recognition (OCR)
 
     ![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/3.1.png)
 
-2. Click on the _generaldoc.pdf_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. Howering over the _Key-Value pairs_ card reveals its respective block. Beside the highlighted block, the extracted key along with the value and confidence is displayed. There are separate tabs for tables and selection marks under the _Content_ tab.
+2. Click on the _generaldoc.pdf_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. Hovering over the _Key-Value pairs_ card reveals its respective block. Beside the highlighted block, the extracted key along with the value and confidence is displayed. There are separate tabs for tables and selection marks under the _Content_ tab.
 
     ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/02_extract_data_using_the_document_analysis_models/assets/3.2.png)
 
