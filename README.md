@@ -1,4 +1,4 @@
-# Getting started with Form Recognizer
+# Document processing with Azure Form Recognizer
 
 ## What is Form Recognizer?
 Form Recognizer is an AI service that applies advanced machine learning to extract text, key-value pairs, tables, and structures from documents automatically and accurately. Turn documents into usable data and shift your focus to acting on information rather than compiling it.
