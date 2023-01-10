@@ -57,7 +57,7 @@ The invoice model automates processing of invoices to extracts customer name, bi
 
     ![Analysis results page - key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/2.3.png)
 
-3. Go to the _Result_ tab to view the JSON output. The models outputs words, lines, paragraphs, tables and key-value pairs along with thier confidence.
+3. Go to the _Result_ tab to view the JSON output. The models outputs words, lines, paragraphs, tables and key-value pairs along with their confidence.
 
     ![Analysis results page - key-value pairs](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/2.4.png)
 
@@ -71,7 +71,7 @@ The receipt model scans sales receipts for merchant name, dates, line items, qua
 
     ![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/3.1.png)
 
-2. Click on the _receipt-with-tips.jpg_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model extracts printed text fields such as _MerchantAddress_, _MerchantName_, _MerchantPhoneNumber_, etc., aswell as handwritten text fields such as _Tip_ and _Total_ from the receipt. 
+2. Click on the _receipt-with-tips.jpg_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model extracts printed text fields such as _MerchantAddress_, _MerchantName_, _MerchantPhoneNumber_, etc., as well as handwritten text fields such as _Tip_ and _Total_ from the receipt. 
 
     ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/3.2.png)
 
@@ -99,7 +99,7 @@ The Identity document (ID) model analyzes and extracts key information from iden
 
     ![FR landing page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/4.1.png)
 
-2. Click on the _id-license.png_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model recognizes the document type to be of _idDocument.driverLicense_ and extracts fields specifc to the driver license such as _Address_, _CountryRegion_, _DateOfBirth_ and more.
+2. Click on the _id-license.png_ sample and then click on _Analyze_. Upon completion, the result is displayed on the right. The model recognizes the document type to be of _idDocument.driverLicense_ and extracts fields specific to the driver license such as _Address_, _CountryRegion_, _DateOfBirth_ and more.
 
     ![Analysis results page](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/4.2.png)
 
