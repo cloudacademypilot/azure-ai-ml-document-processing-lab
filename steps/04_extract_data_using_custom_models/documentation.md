@@ -6,7 +6,7 @@ Extract text, structure, and fields from models trained with your data, so they'
 1. Template (Custom form) models
 2. Neural (Custom document) models
 
-To create a custom model, you label a dataset of documents with the values you want extracted and train the model on the labeled dataset. You only need five examples of the same form or document type to get started.
+To create a custom model, you label a dataset of documents with the values you want to be extracted and train the model on the labeled dataset. You only need five examples of the same form or document type to get started.
 
 ## Compare model features
 
@@ -95,7 +95,7 @@ Your training set will consist of structured documents where the formatting and 
 
 8. Label the remaining documents in your dataset by selecting each document and selecting the text to be labeled.
 
-9. You now have all the documents in your dataset labeled. Click _Train_ present on the top right corner. If you look at the storage account, you'll find a .labels.json and .ocr.json files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
+9. You now have all the documents in your dataset labeled. Click _Train_ present on the top right corner. If you look at the storage account, you'll find a _.labels.json_ and _.ocr.json_ files that correspond to each document in your training dataset and a new fields.json file. This training dataset will be submitted to train the model.
 
     ![Train](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/04_extract_data_using_custom_models/assets/2.8.png)
 
