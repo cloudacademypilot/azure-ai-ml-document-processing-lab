@@ -43,7 +43,7 @@ Form W-2, also known as the Wage and Tax Statement, is sent by an employer to ea
 
 ## Invoice model
 
-The invoice model automates processing of invoices to extracts customer name, billing address, due date, and amount due, line items and other key data. Invoices can be of various formats and quality including phone-captured images, scanned documents, and digital PDFs.
+The invoice model automates the processing of invoices to extract customer name, billing address, due date, and amount due, line items and other key data. Invoices can be of various formats and quality including phone-captured images, scanned documents, and digital PDFs.
 
 ### Invoice model in Form Recognizer Studio
 
@@ -77,7 +77,7 @@ The receipt model scans sales receipts for merchant name, dates, line items, qua
 
 3. Go to the _Result_ tab to view the JSON output. 
     
-    1. The _Items_ field is extracted as an array of objects. Each object containing sub-fields like _Description_, _Quantity_ and _TotalPrice_. 
+    1. The _Items_ field is extracted as an array of objects. Each object contains sub-fields like _Description_, _Quantity_ and _TotalPrice_. 
     
     ![JSON output - Items aray](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/3.3.png)
 
@@ -85,7 +85,7 @@ The receipt model scans sales receipts for merchant name, dates, line items, qua
     
     ![JSON output - styles](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/3.5.png)
     
-    3. The value within the areas are extracted as fields such as _Tip_ and _Total_ under _fields_ property.
+    3. The value within the areas is extracted as fields such as _Tip_ and _Total_ under _fields_ property.
     
     ![JSON output - fields](https://github.com/CSALabsAutomation/azure-ai-ml-document-processing-lab/blob/master/steps/03_extract_data_using_prebuilt_models/assets/3.4.png)
 
