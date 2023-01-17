@@ -101,7 +101,7 @@
             "properties": {
                  "azPowerShellVersion": "7.2.4",
                  "retentionInterval": "P1D",
-                 "primaryScriptUri": "https://mscalabshare.blob.core.windows.net/artifacts/aiml/uploadFiles.ps1?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+                 "primaryScriptUri": "https://mscalabshare.blob.core.windows.net/assets/aiml/uploadFiles.ps1?sp=r&st=2023-01-17T05:10:58Z&se=2099-01-17T13:10:58Z&spr=https&sv=2021-06-08&sr=b&sig=97gk1D6dhfVTFNfVn1snQ%2FwXLc4odonsAjfBvVy1NnU%3D",
                  "cleanupPreference": "OnSuccess",
                  "arguments": "[concat('-ResourceGroupName ', resourceGroup().name, ' -StorageAccountName ', parameters('storageAccountName'))]"
                           }
