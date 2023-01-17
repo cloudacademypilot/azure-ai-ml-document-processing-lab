@@ -7,19 +7,19 @@ Write-Host "File uploading...."
 Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 
 $Uri = @(
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/neural-model-test-dataset/test-invoice.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/neural-model-training-dataset/invoice1.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/neural-model-training-dataset/invoice2.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/neural-model-training-dataset/invoice3.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/neural-model-training-dataset/invoice4.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/neural-model-training-dataset/invoice5.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/template-model-test-dataset/filled-form.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/template-model-training-dataset/form1.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/template-model-training-dataset/form2.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/template-model-training-dataset/form3.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/template-model-training-dataset/form4.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/template-model-training-dataset/form5.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
-    "https://mscalabshare.blob.core.windows.net/artifacts/aiml/read-model-test-dataset/resume_example3.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D"
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/neural_model_test_dataset/test-invoice.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/neural_model_training_dataset/invoice1.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/neural_model_training_dataset/invoice2.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/neural_model_training_dataset/invoice3.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/neural_model_training_dataset/invoice4.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/neural_model_training_dataset/invoice5.pdf?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/template_model_test_dataset/filled-form.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/template_model_training_dataset/form1.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/template_model_training_dataset/form2.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/template_model_training_dataset/form3.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/template_model_training_dataset/form4.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/template_model_training_dataset/form5.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D",
+    "https://mscalabshare.blob.core.windows.net/assets/aiml/read_model_test_dataset/resume_example3.png?sp=r&st=2023-01-16T19:05:44Z&se=2099-01-17T03:05:44Z&spr=https&sv=2021-06-08&sr=c&sig=nmGla%2BledSv8IeNjZoY5zVeRQq3uYtvIJr00rh9x5%2Fk%3D"
 );
 
 
