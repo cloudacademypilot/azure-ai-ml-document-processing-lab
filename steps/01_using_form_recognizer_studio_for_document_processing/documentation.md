@@ -73,14 +73,14 @@ The Read API analyzes and extracts lines, words, their locations, detected langu
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![Read model sample](assets/01.1.png)
+![Read model sample](assets/01.1.png)
 
 ### Layout analysis
 
 The Layout analysis model analyzes and extracts text, tables, selection marks, and other structure elements like titles, section headings, page headers, page footers, and more.
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![Layout model sample](assets/01.2.png)
+![Layout model sample](assets/01.2.png)
 
 ### General document
 
@@ -88,7 +88,7 @@ The general document model is ideal for extracting common key-value pairs from f
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![General document model sample](assets/01.3.png)
+![General document model sample](assets/01.3.png)
 
 ### W-2
 
@@ -96,7 +96,7 @@ The W-2 form model extracts key information reported in each box on a W-2 form. 
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![W-2 model sample](assets/01.4.png)
+![W-2 model sample](assets/01.4.png)
 
 ### Invoice
 
@@ -104,7 +104,7 @@ The invoice model automates processing of invoices to extract customer name, bil
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![Invoice model sample](assets/01.5.png)
+![Invoice model sample](assets/01.5.png)
 
 ### Receipt
 
@@ -112,7 +112,7 @@ Use the receipt model to scan sales receipts for merchant name, dates, line item
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![Receipt model sample](assets/01.6.png)
+![Receipt model sample](assets/01.6.png)
 
 ### Identity document (ID)
 
@@ -120,7 +120,7 @@ Use the Identity document (ID) model to process U.S. Driver's Licenses (all 50 s
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![ID model sample](assets/01.7.png)
+![ID model sample](assets/01.7.png)
 
 ### Business card
 
@@ -128,7 +128,7 @@ Use the business card model to scan and extract key information from business ca
 
 #### _Sample document processed using the Form Recognizer Studio_:
 
-    ![Business card model sample](assets/01.8.png)
+![Business card model sample](assets/01.8.png)
 
 ### Custom models
 
