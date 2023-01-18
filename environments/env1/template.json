@@ -78,7 +78,7 @@
             "type": "blobServices",
             "apiVersion": "2018-11-01",
             "dependsOn": [
-                "storageAccountName"
+                "[parameters('storageAccountName')]"
             ],
             "properties": {
                 "cors": {
