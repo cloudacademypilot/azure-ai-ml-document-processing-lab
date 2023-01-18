@@ -62,6 +62,7 @@
     "allowedServices": {
       "value": [
         "Microsoft.Storage/storageAccounts",
+        "Microsoft.Storage/storageAccounts/blobServices",
         "Microsoft.Storage/storageAccounts/blobServices/containers",
         "Microsoft.Resources/deploymentScripts",
         "Microsoft.ManagedIdentity/userAssignedIdentities",
