@@ -94,30 +94,31 @@ The following illustration shows the typical components in an image of a sample 
 4. Go to the _Result_ tab to view the JSON output.
  
     1. Paragraph extraction: The Layout model extracts all identified blocks of text in the _paragraphs_ collection as a top level object under _analyzeResults_. Each entry in this collection represents a text block and includes the extracted text as _content_ and the bounding _polygon_ coordinates. The _span_ information points to the text fragment within the top level _content_ property that contains the full text from the document. The _role_ property extracts logical roles like titles, section headings, page headers, page footers.
-      1. Paragraph roles: The model extracts logical roles like titles, section headings, page headers, page footers, and more. The model assigns certain text blocks in the _paragraphs_ collection with their specialized role or type predicted by the model. They're best used with unstructured documents to help understand the layout of the extracted content for a richer semantic analysis. The following paragraph roles are supported:
+      
+    1. Paragraph roles: The model extracts logical roles like titles, section headings, page headers, page footers, and more. The model assigns certain text blocks in the _paragraphs_ collection with their specialized role or type predicted by the model. They're best used with unstructured documents to help understand the layout of the extracted content for a richer semantic analysis. The following paragraph roles are supported:
 
-            Predicted role | Description 
-            ------------- | -------------
-            title | The main heading(s) in the page
-            sectionHeading | One or more subheading(s) on the page
-            footnote | Text near the bottom of the page
-            pageHeader | Text near the top edge of the page
-            pageFooter | Text near the bottom edge of the page
-            pageNumber | Page number
+        Predicted role | Description 
+        ------------- | -------------
+        title | The main heading(s) in the page
+        sectionHeading | One or more subheading(s) on the page
+        footnote | Text near the bottom of the page
+        pageHeader | Text near the top edge of the page
+        pageFooter | Text near the bottom edge of the page
+        pageNumber | Page number
         
-         ![Paragraph extraction](assets/2.4.png)
+        ![Paragraph extraction](assets/2.4.png)
     
     2. Lines and words extraction: The model in extracts print and handwritten style text as _lines_ and _words_. The model outputs bounding _polygon_ coordinates and _confidence_ for the extracted words. The _styles_ collection includes any handwritten style for lines if detected along with the spans pointing to the associated text. This feature applies to supported handwritten languages.
     
-    ![Lines and words extraction](assets/2.5.png)
+        ![Lines and words extraction](assets/2.5.png)
 
     3. Selection marks extraction: The model extracts selection marks from documents. Extracted selection marks appear within the _pages_ collection for each page. They include the bounding _polygon_, _confidence_, and selection _state_ (_selected_/_unselected_). Any associated text if extracted is also included as the starting index (_offset_) and _length_ that references the top level _content_ property that contains the full text from the document.
     
-    ![Selection mark extraction](assets/2.6.png)
+        ![Selection mark extraction](assets/2.6.png)
 
     4. Extract tables from documents and images: The model extracts tables in the _pageResults_ section of the JSON output. Extracted table information includes the number of columns and rows, row span, and column span. Each cell with its bounding polygon is output along with information whether it's recognized as a _columnHeader_ or not. The model supports extracting tables that are rotated. Each table cell contains the row and column index and bounding polygon coordinates. For the cell text, the model outputs the _span_ information containing the starting index (_offset_). The model also outputs the _length_ within the top-level content that contains the full text from the document.
     
-    ![Table extraction](assets/2.7.png)
+        ![Table extraction](assets/2.7.png)
 
 
 ## General document model
