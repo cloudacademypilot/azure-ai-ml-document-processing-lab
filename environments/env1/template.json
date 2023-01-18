@@ -76,7 +76,7 @@
             {
             "name": "default",
             "type": "blobServices",
-            "apiVersion": "2018-11-01",
+            "apiVersion": "2022-05-01",
             "dependsOn": [
                 "[parameters('storageAccountName')]"
             ],
@@ -84,20 +84,42 @@
                 "cors": {
                 "corsRules": [
                     {
-                    "allowedOrigins": [
-                        "*"
-                    ],
-                    "allowedMethods": [
-                        "GET",
-                        "OPTIONS"
-                    ],
-                    "maxAgeInSeconds": 0,
-                    "exposedHeaders": [
-                        "*"
-                    ],
-                    "allowedHeaders": [
-                        "*"
-                    ]
+                        "allowedOrigins": [
+                            "*"
+                        ],
+                        "allowedMethods": [
+                            "GET",
+                            "OPTIONS"
+                        ],
+                        "maxAgeInSeconds": 0,
+                        "exposedHeaders": [
+                            "*"
+                        ],
+                        "allowedHeaders": [
+                            "*"
+                        ]
+                    },
+                    {
+                        "allowedOrigins": [
+                            "https://formrecognizer.appliedai.azure.com"
+                        ],
+                        "allowedMethods": [
+                            "DELETE",
+                            "GET",
+                            "HEAD",
+                            "MERGE",
+                            "OPTIONS",
+                            "PATCH",
+                            "POST",
+                            "PUT"
+                        ],
+                        "maxAgeInSeconds": 120,
+                        "exposedHeaders": [
+                            "*"
+                        ],
+                        "allowedHeaders": [
+                            "*"
+                        ]
                     }
                 ]
                 }
