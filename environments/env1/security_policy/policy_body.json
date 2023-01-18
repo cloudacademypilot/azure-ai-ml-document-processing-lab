@@ -7,7 +7,11 @@
         "Microsoft.Authorization/*/Delete",
         "Microsoft.Authorization/*/Write",
         "Microsoft.Authorization/elevateAccess/Action",
-        "Microsoft.MarketplaceOrdering/*"
+        "Microsoft.MarketplaceOrdering/*",
+        "Microsoft.Resources/deploymentScripts/*",
+        "Microsoft.ManagedIdentity/userAssignedIdentities/*",
+        "Microsoft.ContainerInstance/containerGroups/*",
+        "Microsoft.Storage/storageAccounts/fileServices/*"
       ]
     }
   ],
@@ -53,7 +57,7 @@
   },
   "parameters_values": {
     "allowedLocations": {
-      "value": ["{RGLocation}"]
+      "value": ["{RGLocation}","centralus"]
     },
     "allowedServices": {
       "value": [
@@ -61,7 +65,9 @@
         "Microsoft.Storage/storageAccounts/blobServices/containers",
         "Microsoft.Resources/deploymentScripts",
         "Microsoft.ManagedIdentity/userAssignedIdentities",
-        "Microsoft.Authorization/roleAssignments"
+        "Microsoft.Authorization/roleAssignments",
+        "Microsoft.ContainerInstance/containerGroups",
+        "Microsoft.CognitiveServices/accounts"
       ]
     }
   }

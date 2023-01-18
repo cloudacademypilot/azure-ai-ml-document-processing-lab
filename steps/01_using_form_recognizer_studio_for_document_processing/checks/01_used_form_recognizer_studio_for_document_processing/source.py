@@ -1,33 +1,29 @@
-import os
-import sys
-import json
-import logging
-from azure.identity import AzureCliCredential
+from azure.identity import ClientSecretCredential, SharedTokenCacheCredential
 from azure.mgmt.resource import ResourceManagementClient
-from azure.mgmt.subscription import SubscriptionClient
 
-def handler():
-    try:
-        with open("steps/01_using_form_recognizer_studio_for_document_processing/checks/01_used_form_recognizer_studio_for_document_processing/params.json") as f:
-            params = json.load(f)
+def with_hint(result, hint=None):
+    return {'result': result, 'hint_message': hint} if hint else result
 
-        subscription_id = params['subscription_id']
-        resource_group_name = params['resource_group_name']
+def handler(event, context):
+    credentials, subscription_id = get_credentials(event)
+    resource_group = event['environment_params']['resource_group']
 
-        credential = AzureCliCredential()
+    client = ResourceManagementClient(credentials, subscription_id)
+    resource_type = 'Microsoft.CognitiveServices/accounts'
+    result = [resource for resource in client.resources.list_by_resource_group(resource_group_name=resource_group)]
 
-        resource_client = ResourceManagementClient(credential, subscription_id)
-        resource_list = resource_client.resources.list_by_resource_group(resource_group_name, expand = "createdTime,changedTime")
+    result = [resource for resource in client.resources.list_by_resource_group(resource_group_name=resource_group, 
+                                         filter=f"resourceType eq '{resource_type}'")]
 
-        fr_resource = [resource for resource in resource_list if resource.kind == "FormRecognizer"]
-        if(len(fr_resource) != 0):
-            print('Form Recognizer Studio is created')
-        else:
-            print('Form Recognizer Studio is not created')
+    hint = f'No resources of type {resource_type} in lab resource group. Please ensure all commands completed successfully.'
+    return with_hint(any([r for r in result if r.kind == 'FormRecognizer']), hint)
 
-    except Exception as e:
-        logging.error(e)
-        
-if __name__=="__main__":
-    handler()
 
+def get_credentials(event):
+    subscription_id = event['environment_params']['subscription_id']
+    credentials = ClientSecretCredential(
+        client_id=event['credentials']['credential_id'],
+        client_secret=event['credentials']['credential_key'],
+        tenant_id=event['environment_params']['tenant']
+    )
+    return credentials, subscription_id
