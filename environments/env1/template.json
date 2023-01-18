@@ -73,35 +73,37 @@
                 "allowBlobPublicAccess": true
             },
             "resources": [
-        {
-          "name": "default",
-          "type": "blobServices",
-          "apiVersion": "2018-11-01",
-          "dependsOn": [
-            "storageAccountName"
-          ],
-          "properties": {
-            "cors": {
-              "corsRules": [
-                {
-                  "allowedOrigins": [
-                    "*"
-                  ],
-                  "allowedMethods": [
-                    "GET",
-                    "OPTIONS"
-                  ],
-                  "maxAgeInSeconds": 0,
-                  "exposedHeaders": [
-                    "*"
-                  ],
-                  "allowedHeaders": [
-                    "*"
-                  ]
+            {
+            "name": "default",
+            "type": "blobServices",
+            "apiVersion": "2018-11-01",
+            "dependsOn": [
+                "storageAccountName"
+            ],
+            "properties": {
+                "cors": {
+                "corsRules": [
+                    {
+                    "allowedOrigins": [
+                        "*"
+                    ],
+                    "allowedMethods": [
+                        "GET",
+                        "OPTIONS"
+                    ],
+                    "maxAgeInSeconds": 0,
+                    "exposedHeaders": [
+                        "*"
+                    ],
+                    "allowedHeaders": [
+                        "*"
+                    ]
+                    }
+                ]
                 }
-              ]
             }
-          }
+            }
+            ]
         },
         {
             "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
