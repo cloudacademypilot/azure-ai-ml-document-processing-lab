@@ -55,15 +55,15 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
  
     1. Paragraph extraction: The model extracts all identified blocks of text in the _paragraphs_ collection as a top level object under _analyzeResults_. Each entry in this collection represents a text block and includes the extracted text as _content_ and the bounding polygon coordinates under _boundingRegions_. The _spans_ information points to the text fragment within the top-level content property that contains the full text from the document.
     
-    ![JSON output - Paragraph extraction](assets/1.6.png)
+        ![JSON output - Paragraph extraction](assets/1.6.png)
 
     2. Lines and words extraction: The model extracts print and handwritten style text as _lines_ and _words_. The model outputs bounding _polygon_ coordinates and _confidence_ for the extracted words. The _styles_ collection includes any handwritten style for lines if detected along with the spans pointing to the associated text. This feature applies to supported handwritten languages.
     
-    ![JSON output - Lines and words extraction](assets/1.7.png)
+        ![JSON output - Lines and words extraction](assets/1.7.png)
 
     3. Language detection: The model detects language for text lines. It will predict the detected primary language for each text line along with the _confidence_ in the _languages_ collection under _analyzeResult_.
     
-    ![JSON output - Language detection](assets/1.8.png)
+        ![JSON output - Language detection](assets/1.8.png)
 
 ## Layout model
 
