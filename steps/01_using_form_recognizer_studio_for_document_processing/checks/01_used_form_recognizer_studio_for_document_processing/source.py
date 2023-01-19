@@ -14,7 +14,7 @@ def handler(event, context):
     result = [resource for resource in client.resources.list_by_resource_group(resource_group_name=resource_group, 
                                          filter=f"resourceType eq '{resource_type}'")]
 
-    hint = f'No resources of kind {resource_type} in lab resource group. Please ensure all commands completed successfully.'
+    hint = f'No resources of kind Form Recognizer in lab resource group. Please ensure all commands completed successfully.'
     return with_hint(any([r for r in result if r.kind == 'FormRecognizer']), hint)
 
 
