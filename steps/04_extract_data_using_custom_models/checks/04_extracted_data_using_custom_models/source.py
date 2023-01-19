@@ -1,58 +1,68 @@
-from azure.ai.formrecognizer import DocumentModelAdministrationClient 
-from azure.identity import AzureCliCredential
-from azure.core.credentials import AzureKeyCredential
-from azure.core.exceptions import ResourceNotFoundError
-from azure.mgmt.resource import ResourceManagementClient
 import json
 import requests
+from azure.identity import ClientSecretCredential, SharedTokenCacheCredential
+from azure.mgmt.resource import ResourceManagementClient
+
+def with_hint(result, hint=None):
+    return {'result': result, 'hint_message': hint} if hint else result
+
+def authorized_get(url, key):
+    return requests.get(url, headers={'Ocp-Apim-Subscription-Key': key})
+
+def authorized_post(url, bearer_token):
+    return requests.post(url, headers={'Authorization': f'Bearer {bearer_token.token}', 'ContentType': 'application/json'})
+
+def get_access_key(bearer_token, subscriptionId, resourceGroupName, accountName):
+    url = f"https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CognitiveServices/accounts/{accountName}/listKeys?api-version=2021-10-01"
+    response = authorized_post(url, bearer_token)
+    return response.json()['key1']
+
+def get_document_models(key, accountName):
+    url = f"https://{accountName}.cognitiveservices.azure.com/formrecognizer/documentModels?api-version=2022-08-31"
+    response = authorized_get(url, key)
+    return response.json()['value']
+
+def get_document_model(key, accountName, modelId):
+    url = f"https://{accountName}.cognitiveservices.azure.com/formrecognizer/documentModels/{modelId}?api-version=2022-08-31"
+    response = authorized_get(url, key)
+    return response.json()
+
+def handler(event, context):
+    credentials, subscription_id = get_credentials(event)
+    resource_group = event['environment_params']['resource_group']
+
+    bearer_token = credentials.get_token('https://management.azure.com/.default')
+
+    client = ResourceManagementClient(credentials, subscription_id)
+    resource_type = 'Microsoft.CognitiveServices/accounts'
+
+    result = [resource for resource in client.resources.list_by_resource_group(resource_group_name=resource_group, 
+                                         filter=f"resourceType eq '{resource_type}'")]
+
+    neural_models = []
+    template_models = []
+    for recognizer in [r for r in result if r.kind == 'FormRecognizer']:
+        key = get_access_key(bearer_token, subscription_id, resource_group, recognizer.name)
+        models = [m for m in get_document_models(key, recognizer.name) if 'prebuilt' not in m['modelId']]
+        for m in models:
+            model = get_document_model(key, recognizer.name, m['modelId'])
+            build_mode = model['docTypes'][m['modelId']]['buildMode']
+            if build_mode == 'neural':
+                neural_models.append(model)
+            elif build_mode == 'template':
+                template_models.append(model)
+
+    n_template_models = len(template_models)
+    n_neural_models = len(neural_models)
+    hint = f'Found {n_template_models} template and {n_neural_models} neural custom models in the lab resource group. Please ensure you have created one template and one neural custom model.'
+    return with_hint(n_template_models > 0 and n_neural_models > 0, hint)
 
 
-with open("steps/04_extract_data_using_custom_models/checks/04_extracted_data_using_custom_models/params.json") as f:
-    params = json.load(f)
-
-subscription_id = params['subscription_id']
-resource_group_name = params['resource_group_name']
-
-credential = AzureCliCredential()
-token = credential.get_token("https://management.azure.com").token
-
-resource_client = ResourceManagementClient(credential, subscription_id)
-resource_list = resource_client.resources.list_by_resource_group(resource_group_name, expand = "createdTime,changedTime")
-
-for resource in resource_list:
-    if resource.kind == "FormRecognizer":
-        fr_res_name = resource.name
-
-endpoint = "https://" + fr_res_name + ".cognitiveservices.azure.com/"
-
-listKeysUrl = "https://management.azure.com/subscriptions/" + subscription_id + "/resourceGroups/" + resource_group_name + "/providers/Microsoft.CognitiveServices/accounts/" + fr_res_name + "/listKeys?api-version=2021-10-01"
-headers = {
-    'ContentType': 'application/json',
-    'Authorization': f'Bearer {token}'
-}
-
-response = requests.post(url=listKeysUrl, headers=headers)
-if response.status_code == 200:
-    key1 = response.json()['key1']
-
-keyCredential = AzureKeyCredential(key1)
-
-document_model_admin_client = DocumentModelAdministrationClient(endpoint, keyCredential)
-account_details = document_model_admin_client.get_resource_details()
-
-print("{} account has {} custom models, and we can have at most {} custom models".format(fr_res_name, account_details.custom_document_models.count, account_details.custom_document_models.limit))
-
-# Here we get a paged list of all of our models
-models = document_model_admin_client.list_document_models()
-
-model_ids = [model.model_id for model in models if (model.model_id == "template-model") or (model.model_id == "neural-model")]
-
-if "template-model" in model_ids:
-    print("Custom Template Model created")
-else:
-    print("Custom Template Model not created")
-
-if "neural-model" in model_ids:
-    print("Custom Neural Model created")
-else:
-    print("Custom Neural Model not created")
+def get_credentials(event):
+    subscription_id = event['environment_params']['subscription_id']
+    credentials = ClientSecretCredential(
+        client_id=event['credentials']['credential_id'],
+        client_secret=event['credentials']['credential_key'],
+        tenant_id=event['environment_params']['tenant']
+    )
+    return credentials, subscription_id

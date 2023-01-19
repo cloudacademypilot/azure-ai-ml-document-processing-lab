@@ -10,7 +10,6 @@ def handler(event, context):
 
     client = ResourceManagementClient(credentials, subscription_id)
     resource_type = 'Microsoft.CognitiveServices/accounts'
-    result = [resource for resource in client.resources.list_by_resource_group(resource_group_name=resource_group)]
 
     result = [resource for resource in client.resources.list_by_resource_group(resource_group_name=resource_group, 
                                          filter=f"resourceType eq '{resource_type}'")]
