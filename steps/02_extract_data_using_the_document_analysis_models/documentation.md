@@ -32,6 +32,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 ### Read model in Form Recognizer Studio
 
 1. In the Form Recognizer Studio, click _Try it now_ on the _Read_ card to use the model.
+     > Note : You have to configure service resource by selecting subscription id, resource group and the form recognizer studio you created from dropdown.
 
     ![FR Studio landing page](assets/1.1.png)
 
@@ -40,6 +41,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
     ![Read model page](assets/1.2.png)
 
 3. Go to the Storage Account and click on the _resume_example3_ file. Copy the URL to the file and paste it in the dialog box.
+     > Note : resume_example3.png is present in **read-model-test-dataset** folder in storage account inside **fr-datasets** container.
  
     ![Storage Account page](assets/1.3.png)
 
