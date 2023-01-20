@@ -1,1 +1,1 @@
-Check if the User Successfully Extracted Data using Custom Models
+Check if the User Successfully extracted data using both a template and a neural custom model
