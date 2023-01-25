@@ -49,7 +49,7 @@ The following Form Recognizer service features are available in the Studio.
 
     ![03-Form Recognizer Overview page](assets/signout.jpg)
     
-6. You will need to use the credentials provided for you to login to azure portal.
+6. Select **signin** in the upper-right corner of the form recognizer studio. You will need to use the credentials provided for you to login to azure portal.
 
     ![03-Form Recognizer Overview page](assets/signin.jpg)
 
