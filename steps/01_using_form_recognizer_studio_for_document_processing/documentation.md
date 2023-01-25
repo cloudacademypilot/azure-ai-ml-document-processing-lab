@@ -44,6 +44,18 @@ The following Form Recognizer service features are available in the Studio.
 4. Go to your Form Recognizer resource and click on _Try it_ on the Form Recognizer Studio card to use the Studio.
 
     ![03-Form Recognizer Overview page](assets/03.png)
+    
+5. If you are already signed in to a Microsoft account, select the account information in the upper-right corner of the form recognizer studio and click sign out.
+
+    ![03-Form Recognizer Overview page](assets/signout.jpg)
+    
+6. You will need to use the credentials provided for you to login to azure portal.
+
+    ![03-Form Recognizer Overview page](assets/signin.jpg)
+
+> Note: You may prefer to use an incognito/private mode browser to log in if you want to keep your lab work entirely separate.
+
+7. If presented with the choice to Pick an account, click the **Use another account** option and enter the **username** and **password** you used for azure portal and signin.
 
 ## Exercise 2: Learn about the different models in Form Recognizer Studio
 
