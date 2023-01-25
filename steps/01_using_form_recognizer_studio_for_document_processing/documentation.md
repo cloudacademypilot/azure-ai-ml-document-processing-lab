@@ -55,7 +55,9 @@ The following Form Recognizer service features are available in the Studio.
 
 > Note: You may prefer to use an incognito/private mode browser to log in if you want to keep your lab work entirely separate.
 
-7. If presented with the choice to Pick an account, click the **Use another account** option and enter the **username** and **password** you used for azure portal and signin.
+7. If presented with the choice to Pick an account, select the account you used for signing into azure portal for this lab.
+
+    ![03-Form Recognizer Overview page](assets/account.jpg)
 
 ## Exercise 2: Learn about the different models in Form Recognizer Studio
 
