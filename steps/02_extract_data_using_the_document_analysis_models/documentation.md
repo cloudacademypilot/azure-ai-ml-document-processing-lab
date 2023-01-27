@@ -42,7 +42,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 
     ![Read model page](assets/1.2.png)
 
-3. To get the URL, go to your **Resource group** in azure portal and select the **Storage Account**. Click on **Containers** under **Data Storage** on left-side and select **fr-datasets** conatiner. Open the folder **read-model-test-dataset** and click on the _resume_example3.png_ file. Copy the URL.
+3. To get the URL, go to your **Resource group** in azure portal and select the **Storage Account**. Click on **Containers** under **Data Storage** on left-side and select **fr-datasets** container. Open the folder **read-model-test-dataset** and click on the _resume_example3.png_ file. Copy the URL.
      
      ![Read model page](assets/1_storage.jpg)
      
