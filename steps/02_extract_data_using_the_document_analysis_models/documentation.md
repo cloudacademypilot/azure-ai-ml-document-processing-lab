@@ -31,18 +31,20 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 
 ### Read model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _Read_ card to use the model.
-    
+1. In the Form Recognizer Studio, click _Try it out_ on the _Read_ card to use the model.
+
     > Note : You have to configure service resource by selecting subscription id, resource group and the form recognizer studio you created from dropdown.
 
+    ![FR Studio landing page](assets/configure.png)
+    
     ![FR Studio landing page](assets/1.1.png)
 
-2. Select a document of your choice either from the Storage Account through the _Fetch from URL_ option or upload a file from your local machine through the _Browse for a file_ option. You can also perform analysis on the samples already uploaded in the Studio. In this lab, we will analyze the document present in the Storage Account.
+2. Click on the _Fetch from URL_ option to select a document from storage account to analyze.
 
     ![Read model page](assets/1.2.png)
 
-3. Go to your **Resource group** in azure portal and select the **Storage Account**. Click on **Containers** under **Data Storage** on left-side and select **fr-datasets** conatiner. Open the folder **read-model-test-dataset** and click on the _resume_example3.png_ file. Copy the URL and paste it in the dialog box.
-    
+3. To get the URL, go to your **Resource group** in azure portal and select the **Storage Account**. Click on **Containers** under **Data Storage** on left-side and select **fr-datasets** container. Open the folder **read-model-test-dataset** and click on the _resume_example3.png_ file. Copy the URL.
+     
     ![Read model page](assets/1_storage.jpg)
     
     ![Read model page](assets/2_container.jpg)
@@ -51,7 +53,7 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
     
     ![Read model page](assets/4_url.jpg)
 
-4. Click _Fetch_ and wait for the file to be uploaded. After successful upload, you can view file on the left.
+4. Go back to Azure form recognizer studio and paste the URL. Click _Fetch_ and wait for the file to be uploaded. After successful upload, you can view file on the left.
 
     ![Fetch dialog box](assets/1.4.png)
 
@@ -89,11 +91,11 @@ The following illustration shows the typical components in an image of a sample 
 
 ### Layout model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _Layout_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _Layout_ card to use the model.
 
     ![FR Studio landing page](assets/2.2.png)
 
-2. Select a document of your choice either from the Storage Account through the Fetch from URL option or upload a file from your local machine through the Browse for a file option. You can also perform analysis on the samples already uploaded in the Studio which is what we will be doing henceforth.
+2. You can perform analysis on the samples already present in the Studio which is what we will be doing henceforth.
 
 3. Click on the _layout-checklist.jpg_ sample and then click on Analyze. Upon completion, the result is displayed on the right. Hovering over the cards under _Text_ reveals its respective block. Beside the highlighted block, the extracted text along with the polygon coordinates and role if identified is displayed. There are separate tabs for tables and selection marks.
 
@@ -135,7 +137,7 @@ The general document model combines powerful Optical Character Recognition (OCR)
 
 ### General document model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _General documents_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _General documents_ card to use the model.
 
     ![FR landing page](assets/3.1.png)
 

@@ -28,7 +28,7 @@ Form W-2, also known as the Wage and Tax Statement, is sent by an employer to ea
 
 ### W-2 model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _W-2_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _W-2_ card to use the model.
 
     ![FR Studio landing page](assets/1.1.png)
 
@@ -47,7 +47,7 @@ The invoice model automates the processing of invoices to extract customer name,
 
 ### Invoice model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _Invoices_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _Invoices_ card to use the model.
 
     ![FR landing page](assets/2.1.png)
 
@@ -67,7 +67,7 @@ The receipt model scans sales receipts for merchant name, dates, line items, qua
 
 ### Receipt model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _Receipts_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _Receipts_ card to use the model.
 
     ![FR landing page](assets/3.1.png)
 
@@ -95,7 +95,7 @@ The Identity document (ID) model analyzes and extracts key information from iden
 
 ### Identity document (ID) model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _Identity documents_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _Identity documents_ card to use the model.
 
     ![FR landing page](assets/4.1.png)
 
@@ -113,7 +113,7 @@ The Business card model analyzes printed business cards and extracts key informa
 
 ### Business card model in Form Recognizer Studio
 
-1. In the Form Recognizer Studio, click _Try it now_ on the _Business cards_ card to use the model.
+1. In the Form Recognizer Studio, click _Try it out_ on the _Business cards_ card to use the model.
 
     ![FR landing page](assets/5.1.png)
 
