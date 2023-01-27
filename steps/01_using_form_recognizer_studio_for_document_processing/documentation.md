@@ -25,23 +25,23 @@ The following Form Recognizer service features are available in the Studio.
 
 ## Exercise 1: Create a Form Recognizer resource
 
-1.  Go to the [Azure](https://portal.azure.com) portal and search _Applied AI services_. Click _Create_ on the Form Recognizer card.
+1.  Go to the [Azure](https://portal.azure.com) portal and in the top search bar, search for _Applied AI services_. Click _Create_ on the Form Recognizer card.
 
     ![01-Applied AI services Overview page](assets/01.png)
 
 2. Enter the following details under the _Basics_ tab. Rest, keep it as is.
 
-    * Subscription - Your subscription
-    * Resource group - Your resource group
+    * Subscription - Select the predefined subscription from dropdown
+    * Resource group - Select the predefined Resource group from dropdown
     * Region - Central US 
     * Name - An unique name
     * Pricing tier - Free tier (F0)
 
     ![02-Basic tab](assets/02.png)
 
-3. Under _Review + create_, click _Create_.
+3. Click _review + create_ and then click _create_. Wait for few minutes for the deployment to complete.
 
-4. Go to your Form Recognizer resource and click on _Try it_ on the Form Recognizer Studio card to use the Studio.
+4. Once the deployment is completed, click on **Go to resource** button. It will take you to the Form recognizer resource. Now click on _Try it_ on the Form Recognizer Studio card to use the Studio.
 
     ![03-Form Recognizer Overview page](assets/03.png)
     
