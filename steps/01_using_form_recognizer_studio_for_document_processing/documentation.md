@@ -53,7 +53,7 @@ The following Form Recognizer service features are available in the Studio.
 
     ![03-Form Recognizer Overview page](assets/signin.jpg)
 
-> Note: You may prefer to use an incognito/private mode browser to log in if you want to keep your lab work entirely separate.
+    > Note: You may prefer to use an incognito/private mode browser to log in if you want to keep your lab work entirely separate.
 
 7. If presented with the choice to Pick an account, select the account you used for signing into azure portal for this lab.
 
@@ -80,6 +80,8 @@ Business card | Scan business cards to extract key fields and data into your app
 __Custom models__	
 Custom models | Extract data from forms and documents specific to your business. Custom models are trained for your distinct data and use cases.
 Composed models | Combine several custom models into a single model to automate processing of diverse document types with a single composed model.
+
+<br />
 
 ### Read OCR
 

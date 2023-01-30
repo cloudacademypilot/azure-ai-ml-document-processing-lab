@@ -32,7 +32,8 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 ### Read model in Form Recognizer Studio
 
 1. In the Form Recognizer Studio, click _Try it out_ on the _Read_ card to use the model.
-     > Note : You have to configure service resource by selecting subscription id, resource group and the form recognizer studio you created from dropdown.
+
+    > Note : You have to configure service resource by selecting subscription id, resource group and the form recognizer studio you created from dropdown.
 
     ![FR Studio landing page](assets/configure.png)
     
@@ -44,13 +45,13 @@ Form Recognizer v3.0's Read Optical Character Recognition (OCR) model runs at a 
 
 3. To get the URL, go to your **Resource group** in azure portal and select the **Storage Account**. Click on **Containers** under **Data Storage** on left-side and select **fr-datasets** container. Open the folder **read-model-test-dataset** and click on the _resume_example3.png_ file. Copy the URL.
      
-     ![Read model page](assets/1_storage.jpg)
-     
-     ![Read model page](assets/2_container.jpg)
-     
-     ![Read model page](assets/3_read-model.jpg)
-     
-     ![Read model page](assets/4_url.jpg)
+    ![Read model page](assets/1_storage.jpg)
+    
+    ![Read model page](assets/2_container.jpg)
+    
+    ![Read model page](assets/3_read-model.jpg)
+    
+    ![Read model page](assets/4_url.jpg)
 
 4. Go back to Azure form recognizer studio and paste the URL. Click _Fetch_ and wait for the file to be uploaded. After successful upload, you can view file on the left.
 
