@@ -1,5 +1,7 @@
 # Using Form Recognizer Studio for document processing
 
+<br />
+
 ## Form Recognizer Studio
 
 Form Recognizer Studio is an online tool to visually explore, understand, train, and integrate features from the Form Recognizer service into your applications. The studio provides a platform for you to experiment with the different Form Recognizer models and interactively sample their returned data without the need to write code.
