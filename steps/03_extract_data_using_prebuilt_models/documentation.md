@@ -1,5 +1,7 @@
 # Extract data using Prebuilt models
 
+<br />
+
 ## Prebuilt models
 
 Extract data from unique document types using the following prebuilt models:

@@ -1,5 +1,7 @@
 # Extract data using the Document Analysis models
 
+<br />
+
 ## Document Analysis models
 
 Extract text, tables, structure, key-value pairs, and named entities from documents using the following document analysis models:
