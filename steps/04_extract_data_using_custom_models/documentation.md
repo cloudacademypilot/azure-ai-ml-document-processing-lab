@@ -93,6 +93,8 @@ Your training set will consist of structured documents where the formatting and 
     
     ![Table field](assets/3_table.jpg)
 
+    ![Table field](assets/4_table.jpg)
+    
 7. Repeat the process for all the fields you wish to label for your dataset.
 
     ![Labeling](assets/2.7.png)
