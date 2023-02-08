@@ -85,9 +85,13 @@ Your training set will consist of structured documents where the formatting and 
 
     ![Select region](assets/2.5.png)
 
-6. To create a _Table_ field, select _Table_ from the dropdown. Name the table, set the _Table type_ as _Fixed_, _Header type_ as _Column_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add columns or rows by clicking on one of the existing ones. Rename all the columns and rows to match the table present in the form. Draw a rectangle over the cell you want to capture, then click on the respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
+6. To create a _Table_ field, click **➕** and select _Table_ from the dropdown. Name the table, set the _Table type_ as _Fixed_, _Header type_ as _Column_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add or delete columns or rows by clicking on one of the existing ones. Rename all the columns and rows to match the table present in the form by selecting each column/row and selecting Rename column/row from dropdown and give a name and enter. Draw a rectangle over the cell you want to capture using _Region_, then click on the respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
 
-    ![Table field](assets/2.6.png)
+    ![Table field](assets/1_table.jpg)
+    
+    ![Table field](assets/2_table.jpg)
+    
+    ![Table field](assets/3_table.jpg)
 
 7. Repeat the process for all the fields you wish to label for your dataset.
 
@@ -100,6 +104,8 @@ Your training set will consist of structured documents where the formatting and 
     ![Train](assets/2.8.png)
 
 ### Train your model
+
+> Note: Please repeat all the steps from above exercise **Label your data**, if you come across any errors while training the model.
 
 1. On the train model dialog, enter _template-model_ as model ID and, optionally, a description. The model ID accepts a string data type.
 
@@ -182,7 +188,7 @@ test-invoice.pdf | Mixed | Left
 
     ![Select word and assign field](assets/6.3.png)
 
-4. To create a _Table_ field, select _Table_ from the dropdown. Name the table, set the _Table type_ as _Dynamic_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add or delete columns or rows by clicking on one of the existing ones. Rename all the columns and rows to match the table present in the form. To assign a value to the cell, choose a word or words in the invoice tables' cell and click on its respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
+4. To create a _Table_ field, click **➕** and select _Table_ from the dropdown. Name the table, set the _Table type_ as _Dynamic_ and click _Create_. Click on the table field you just created from the right navigation bar. You can add or delete columns or rows by clicking on one of the existing ones. Rename all the columns and rows to match the table present in the form by selecting each column/row and selecting Rename column/row from dropdown. To assign a value to the cell, choose a word or words in the invoice table's cell and click on its respective cell position in the table on the right navigation bar. Repeat the same process for all the remaining cells in the table.
 
     ![Table field](assets/6.4.png)
 
